@@ -10,6 +10,9 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState<number>(2025);
+  const whatsappNumber = "9779847044546";
+  const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -62,7 +65,7 @@ export default function Footer() {
                 </span>
               </a>
               <a
-                href="#"
+                href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Contact Butwal Goat Farm on WhatsApp"

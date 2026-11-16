@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import AboutSection from "@/components/Home/AboutSection";
 import FaqSection from "@/components/Home/FaqSection";
 import GoatBreedsSection from "@/components/Home/GoatBreedsSection";
+import GoatTrading from "@/components/Home/GoatTrading";
+import GalleryPreview from "@/components/Home/GalleryPreview";
 import HeroVideo from "@/components/Home/HeroVideo";
+import Services from "@/components/Home/Services";
+import WhyChooseUs from "@/components/Home/WhyChooseUs";
 import Image from "next/image";
+import Founder from "@/components/About/Founder";
 
 export const metadata: Metadata = {
   title: "Home - Butwal Goat Farm | Premium Boer, Barbari, and Sirohi Goat Breeding in Butwal, Nepal",
@@ -33,6 +38,11 @@ export default function Home() {
     <HeroVideo/>
     <AboutSection/>
     <GoatBreedsSection/>
+    <GalleryPreview/>
+    <WhyChooseUs/>
+    <Services/>
+    <GoatTrading/>
+    <Founder/>
     <FaqSection/>
    </div>
   );

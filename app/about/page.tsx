@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import AboutContent from "@/components/About/AboutContent";
+import MissionVision from "@/components/About/MissionVision";
+import Founder from "@/components/About/Founder";
 
 export const metadata: Metadata = {
   title: "About Us - Butwal Goat Farm | Premium Goat Breeding Excellence in Nepal",
@@ -22,5 +24,11 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <AboutContent />;
+  return (
+    <div>
+      <AboutContent />
+      <MissionVision />
+      <Founder />
+    </div>
+  );
 }

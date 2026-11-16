@@ -26,6 +26,9 @@ export default function Header2() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const isTransparent = isHomePage && !isScrolled;
+  const whatsappNumber = "9779847044546";
+  const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const navLinkClass = `relative rounded-full px-3 py-2 text-[15px] font-medium transition-all duration-300 after:absolute after:bottom-1 after:left-3 after:right-3 after:h-[2px] after:origin-left after:scale-x-0 after:rounded-full after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100 ${
     isTransparent
       ? "text-white drop-shadow-sm"
@@ -46,7 +49,7 @@ export default function Header2() {
   return (
     <>
       {/* --- DESKTOP TOP BAR (Scrolls away normally) --- */}
-      <div className="hidden lg:block w-full h-10 bg-[#1B5E20] overflow-hidden font-sans relative">
+      <div className="hidden lg:block w-full h-10 bg-linear-to-r from-[#1B5E20] to-[#2E7D32] overflow-hidden font-sans relative">
         <div className="templateContainer flex h-full items-center justify-between relative z-10">
           {/* Left side: Social Links */}
           <div className="flex items-center z-10">
@@ -79,7 +82,7 @@ export default function Header2() {
                 </span>
               </a>
               <a
-                href="#"
+                href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Contact Butwal Goat Farm on WhatsApp"
@@ -150,10 +153,21 @@ export default function Header2() {
             </div>
 
             {/* Mobile Menu Toggle Button */}
-            <div className="lg:hidden flex items-center">
+            <div className="lg:hidden flex items-center gap-2">
+              <a
+                href="tel:+9779847044546"
+                className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors ${
+                  isTransparent
+                    ? "text-white border border-white hover:border-[#2E7D32] hover:text-[#2E7D32]"
+                    : "bg-[#1B5E20] text-white hover:bg-[#2E7D32]"
+                }`}
+              >
+                <FaPhoneAlt size={12} />
+                <span>Call Now</span>
+              </a>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`focus:outline-none p-2 transition-colors ${
+                className={`focus:outline-none pl-2 transition-colors ${
                   isOpen ? "invisible pointer-events-none" : ""
                 } ${
                   isTransparent
@@ -217,7 +231,7 @@ export default function Header2() {
                 key={link.href}
                 onClick={() => setIsOpen(false)}
                 href={link.href}
-                className="block rounded-md px-3 py-2 text-[17px] font-medium text-[#1A3322] transition-colors hover:bg-[#1B5E20]/10 hover:text-[#2E7D32]"
+                className="block rounded-md pl-0 pr-3 py-2 text-[15px] font-medium text-[#1A3322] transition-colors hover:bg-[#1B5E20]/10 hover:text-[#2E7D32]"
               >
                 {link.label}
               </Link>
@@ -226,7 +240,7 @@ export default function Header2() {
 
           {/* Mobile Contact & Socials Info */}
           <div className="mx-5 mt-4 pt-4 border-t border-gray-100">
-            <div className="flex items-center text-[#2E7D32] font-medium text-lg mb-4">
+            <div className="flex items-center text-[#2E7D32] font-medium text-[15px] mb-4">
               <FaPhoneAlt className="mr-3" size={16} />
               <span>(+977) 9847044546</span>
             </div>
@@ -236,9 +250,9 @@ export default function Header2() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit Butwal Goat Farm on Facebook"
-                className="text-[#2E7D32] transition-colors hover:text-[#2E7D32]"
+                className="text-[#2E7D32] transition-colors hover:text-[#2E7D32] bg-gray-100 rounded-md p-2"
               >
-                <FaFacebookF size={20} />
+                <FaFacebookF size={16} />
                 <span className="sr-only">
                   Visit Butwal Goat Farm on Facebook
                 </span>
@@ -248,21 +262,21 @@ export default function Header2() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit Butwal Goat Farm on Instagram"
-                className="text-[#2E7D32] transition-colors hover:text-[#2E7D32]"
+                className="text-[#2E7D32] transition-colors hover:text-[#2E7D32] bg-gray-100 rounded-md p-2"
               >
-                <FaInstagram size={22} />
+                <FaInstagram size={18} />
                 <span className="sr-only">
                   Visit Butwal Goat Farm on Instagram
                 </span>
               </a>
               <a
-                href="#"
+                href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Contact Butwal Goat Farm on WhatsApp"
-                className="text-[#2E7D32] transition-colors hover:text-[#2E7D32]"
+                className="text-[#2E7D32] transition-colors hover:text-[#2E7D32] bg-gray-100 rounded-md p-2"
               >
-                <FaWhatsapp size={22} />
+                <FaWhatsapp size={18} />
                 <span className="sr-only">
                   Contact Butwal Goat Farm on WhatsApp
                 </span>

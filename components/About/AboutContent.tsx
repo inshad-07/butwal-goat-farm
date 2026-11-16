@@ -1,7 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import MissionVision from "./MissionVision";
+import Founder from "./Founder";
 
 export default function AboutContent() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -38,7 +41,7 @@ export default function AboutContent() {
   return (
     <div className="min-h-screen bg-white">
       {/* Main About Section */}
-      <section className="flex w-full items-center overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 font-sans">
+      <section className="flex w-full items-center overflow-hidden pt-8 pb-10 sm:pt-16 sm:pb-14 md:pt-20 md:pb-16">
         <div ref={sectionRef} className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-8 sm:gap-12 lg:grid-cols-[5fr_7fr] lg:gap-16">
             {/* Left Column: Image */}
@@ -52,7 +55,7 @@ export default function AboutContent() {
                 style={{ transitionDelay: "0ms" }}
               >
                 <Image
-                  src="/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp"
+                  src="/about/kx7xmvdiih3bss5aeqto.webp"
                   alt="Boer goat breeding farm in Nepal"
                   width={800}
                   height={600}
@@ -79,19 +82,19 @@ export default function AboutContent() {
 
               {/* Title */}
               <h1
-                className={`text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-[350] leading-8 sm:leading-10 md:leading-tight text-[#1A3322] transition-all duration-700 ease-out ${
+                className={`text-2xl font-[350] leading-tight text-[#1A3322] md:text-4xl transition-all duration-700 ease-out ${
                   showSectionContent
                     ? "translate-y-0 opacity-100"
                     : "translate-y-5 opacity-0"
                 }`}
                 style={{ transitionDelay: "240ms" }}
               >
-                Premium Goat Breeding Excellence in Nepal
+                Premium Goat  <br className="md:block hidden" /> Breeding Excellence in Nepal
               </h1>
 
               {/* Description */}
               <p
-                className={`w-full text-gray-600 text-[13px] sm:text-[15px] leading-relaxed transition-all duration-700 ease-out ${
+                className={`w-full text-gray-600 text-[14px] sm:text-[16px] leading-relaxed transition-all duration-700 ease-out ${
                   showSectionContent
                     ? "translate-y-0 opacity-100"
                     : "translate-y-5 opacity-0"
@@ -125,7 +128,7 @@ export default function AboutContent() {
                         />
                       </svg>
                     </span>
-                    <span className="text-[13px] sm:text-[15px] leading-relaxed text-gray-600">
+                    <span className="text-[14px] sm:text-[16px] leading-relaxed text-gray-600">
                       {point}
                     </span>
                   </div>
@@ -133,8 +136,9 @@ export default function AboutContent() {
               </div>
 
               {/* Button */}
-              <button
-                className={`bg-linear-to-r from-[#1B5E20] to-[#2E7D32] text-white px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-md font-medium text-[13px] sm:text-[15px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 w-fit mt-2 ${
+              <Link
+                href="/contact"
+                className={`bg-linear-to-r from-[#1B5E20] to-[#2E7D32] text-white px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full font-medium text-[13px] sm:text-[15px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 w-fit mt-2 ${
                   showSectionContent
                     ? "translate-y-0 opacity-100"
                     : "translate-y-5 opacity-0"
@@ -142,11 +146,13 @@ export default function AboutContent() {
                 style={{ transitionDelay: "600ms" }}
               >
                 Contact Us Today
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
+
+   
     </div>
   );
 }

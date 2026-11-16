@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
 export default function AboutSection() {
@@ -30,7 +32,7 @@ export default function AboutSection() {
   }, [showSectionContent]);
 
   return (
-    <section className="flex w-full items-center overflow-hidden bg-[#1A3322]/2 pt-20  font-sans">
+    <section className="flex w-full items-center overflow-hidden bg-[#1A3322]/2 pt-6 pb-10 sm:pt-8 sm:pb-14 md:pt-16 md:pb-16  font-sans">
       <div ref={sectionRef} className="templateContainer">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[6fr_6fr] lg:gap-8">
           {/* Left Column: Images & Stats Grid */}
@@ -63,7 +65,7 @@ export default function AboutSection() {
                     10.25M+
                   </h3>
                   <h4 className="text-[11px] md:text-[13px] lg:text-[15px] leading-relaxed font-medium">
-                    Goats in Nepal
+                    Goat Production
                   </h4>
                 </div>
               </div>
@@ -82,7 +84,7 @@ export default function AboutSection() {
                     20.3%
                   </h3>
                   <h4 className="text-[11px] md:text-[13px] lg:text-[15px] leading-relaxed font-medium">
-                    Goat Production
+                    Goats in Nepal
                   </h4>
                 </div>
                 <Image
@@ -117,7 +119,7 @@ export default function AboutSection() {
             </div>
 
             <h2
-              className={`text-3xl md:text-[44px] font-[350] leading-[40px] md:leading-tight text-[#1A3322] transition-all duration-700 ease-out ${
+              className={`text-2xl font-[350] leading-tight text-[#1A3322] md:text-4xl transition-all duration-700 ease-out ${
                 showSectionContent
                   ? "translate-y-0 opacity-100"
                   : "translate-y-5 opacity-0"
@@ -129,7 +131,7 @@ export default function AboutSection() {
             </h2>
 
             <p
-              className={`w-full text-gray-600 text-[15px] leading-relaxed transition-all duration-700 ease-out ${
+              className={`w-full text-gray-600 text-[14px] sm:text-[16px] leading-relaxed transition-all duration-700 ease-out ${
                 showSectionContent
                   ? "translate-y-0 opacity-100"
                   : "translate-y-5 opacity-0"
@@ -143,7 +145,7 @@ export default function AboutSection() {
               goats, tailored to local altitudes and farming conditions.
             </p>
             <p
-              className={`w-full text-gray-600 text-[15px] leading-relaxed transition-all duration-700 ease-out ${
+              className={`w-full text-gray-600 text-[14px] sm:text-[16px] leading-relaxed transition-all duration-700 ease-out ${
                 showSectionContent
                   ? "translate-y-0 opacity-100"
                   : "translate-y-5 opacity-0"
@@ -157,16 +159,19 @@ export default function AboutSection() {
               for commercial goat farming success.
             </p>
 
-            <button
-              className={`bg-linear-to-r from-[#1B5E20] to-[#2E7D32] text-white px-8 py-3 rounded-md font-medium text-[15px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 w-fit ${
-                showSectionContent
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-5 opacity-0"
-              }`}
-              style={{ transitionDelay: "480ms" }}
-            >
-              Learn More About Our Goats
-            </button>
+            <Link href="/about">
+              <button
+                className={`bg-linear-to-r from-[#1B5E20] to-[#2E7D32] text-white px-8 py-3 rounded-full font-medium text-[15px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 w-fit flex items-center gap-2 ${
+                  showSectionContent
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-5 opacity-0"
+                }`}
+                style={{ transitionDelay: "480ms" }}
+              >
+                About Our Goats
+                <FaLongArrowAltRight className="text-sm" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

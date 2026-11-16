@@ -80,13 +80,13 @@ export default function FaqSection() {
 
   return (
     <>
-      <section className="w-full bg-[#1A3322]/2 pb-10 md:pb-12">
+      <section className="w-full bg-[#1A3322]/2 pt-6 pb-10 sm:pt-8 sm:pb-14 md:pt-16 md:pb-16">
         <div className="templateContainer">
-          <div className="grid grid-cols-1 lg:grid-cols-[4.5fr_7.5fr] gap-10 md:gap-14 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-[4.5fr_7.5fr] gap-2 md:gap-14 lg:gap-12">
             {/* LEFT SIDE: Sticky Header */}
             <div className="relative">
               <div className="lg:sticky lg:top-32 h-fit">
-                <h2 className="bg-linear-to-r from-[#1B5E20] to-[#2E7D32] bg-clip-text text-xs md:text-sm font-bold tracking-[0.2em] text-transparent uppercase mb-3">
+                <h2 className="bg-linear-to-r from-[#1B5E20] to-[#2E7D32] bg-clip-text text-xs md:text-sm font-medium tracking-[0.2em] text-transparent uppercase mb-3">
                   Farming Support
                 </h2>
                 <h3 className="text-2xl sm:text-3xl md:text-[38px] lg:text-[36px] font-normal text-[#101010] leading-snug md:leading-[42.2px] lg:leading-[40px] font-heading mb-5 md:mb-6">

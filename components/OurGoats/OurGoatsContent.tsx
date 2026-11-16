@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaLongArrowAltRight, FaWhatsapp } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
@@ -8,6 +9,11 @@ import Script from "next/script";
 export default function OurGoatsContent() {
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleSections, setVisibleSections] = useState<Set<number>>(new Set());
+  const headingRef = useRef<HTMLDivElement | null>(null);
+  const [headingVisible, setHeadingVisible] = useState(false);
+  const whatsappNumber = "9779847044546";
+  const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const goatBreeds = [
     {
@@ -131,17 +137,44 @@ export default function OurGoatsContent() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!headingRef.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHeadingVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(headingRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen pt-8 pb-10 sm:pt-16 sm:pb-14 md:pt-20 md:pb-10 bg-white">
         {/* Main Page Heading */}
-        <section className="flex w-full items-center overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 font-sans">
+        <section ref={headingRef} className="flex w-full items-center overflow-hidden font-sans">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-[350] leading-8 sm:leading-10 md:leading-tight text-[#1A3322]">
+              <h1
+                className={`text-2xl font-[350] leading-tight text-[#1A3322] md:text-4xl mb-3 transition-all duration-700 ease-out ${
+                  headingVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                }`}
+                style={{ transitionDelay: "0ms" }}
+              >
                 Our Premium Goat Breeds
               </h1>
-              <p className="text-gray-600 text-[13px] sm:text-[15px] leading-relaxed max-w-2xl mx-auto mt-4">
+              <p
+                className={`text-gray-600 text-[13px] sm:text-[15px] leading-relaxed max-w-2xl mx-auto mt-4 transition-all duration-700 ease-out ${
+                  headingVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+                }`}
+                style={{ transitionDelay: "150ms" }}
+              >
                 Discover our premium goat breeds including Boer, Barbari, Sirohi, Khari, and indigenous goats tailored for Nepal's diverse ecological zones.
               </p>
             </div>
@@ -155,37 +188,37 @@ export default function OurGoatsContent() {
             ref={(el) => {
               sectionRefs.current[index] = el as HTMLDivElement | null;
             }}
-            className="flex w-full items-center overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 font-sans"
+            className="flex w-full items-center overflow-hidden py-12 md:py-16 font-sans"
           >
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div
-                className={`grid grid-cols-1 items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 ${
+                className={`grid grid-cols-1 items-center gap-8 sm:gap-12 lg:grid-cols-12 lg:gap-16 ${
                   breed.imageLeft ? "" : "lg:grid-flow-dense"
                 }`}
               >
                 {/* Image Column */}
-                <div className={`w-full ${breed.imageLeft ? "" : "lg:col-start-2"}`}>
+                <div className={`w-full lg:col-span-5 ${breed.imageLeft ? "" : "lg:col-start-8"}`}>
                   <div
-                    className={`relative overflow-hidden rounded-xl sm:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-700 ease-out ${
+                    className={`relative overflow-hidden rounded-xl sm:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-700 ease-out group ${
                       visibleSections.has(index)
-                        ? "translate-y-0 opacity-100"
-                        : "translate-y-6 sm:translate-y-8 opacity-0"
+                        ? "translate-y-0 opacity-100 scale-100"
+                        : "translate-y-6 sm:translate-y-8 opacity-0 scale-95"
                     }`}
                     style={{ transitionDelay: "0ms" }}
                   >
                     <Image
                       src={breed.image}
                       alt={breed.alt}
-                      width={500}
-                      height={400}
-                      sizes="(min-width: 1024px) 40vw, 100vw"
-                      className="w-full h-auto object-cover"
+                      width={400}
+                      height={320}
+                      sizes="(min-width: 1024px) 35vw, 100vw"
+                      className="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     />
                   </div>
                 </div>
 
                 {/* Content Column */}
-                <div className={`relative z-10 flex flex-col space-y-4 sm:space-y-6 ${breed.imageLeft ? "" : "lg:col-start-1"}`}>
+                <div className={`relative z-10 flex flex-col space-y-4 sm:space-y-6 lg:col-span-7 ${breed.imageLeft ? "" : "lg:col-start-1"}`}>
                   {/* Badge */}
                   <div
                     className={`flex items-center gap-3 text-[#1A3322] font-medium tracking-widest text-[10px] sm:text-xs uppercase transition-all duration-700 ease-out ${
@@ -195,13 +228,20 @@ export default function OurGoatsContent() {
                     }`}
                     style={{ transitionDelay: "120ms" }}
                   >
-                    <span className="w-1 h-3 sm:h-4 bg-gradient-to-b from-[#1B5E20] to-[#2E7D32] rounded-sm"></span>
-                    <span>{breed.badge}</span>
+                    <span
+                      className={`w-1 h-3 sm:h-4 bg-linear-to-b from-[#1B5E20] to-[#2E7D32] rounded-sm transition-all duration-500 ease-out ${
+                        visibleSections.has(index) ? "scale-x-100" : "scale-x-0"
+                      }`}
+                      style={{ transitionDelay: "220ms" }}
+                    ></span>
+                    <span className={`transition-all duration-500 ease-out ${visibleSections.has(index) ? "opacity-100" : "opacity-0"}`} style={{ transitionDelay: "280ms" }}>
+                      {breed.badge}
+                    </span>
                   </div>
 
                   {/* Title */}
                   <h2
-                    className={`text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-[350] leading-8 sm:leading-10 md:leading-tight text-[#1A3322] transition-all duration-700 ease-out ${
+                    className={`text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-[350] leading-5 sm:leading-6 md:leading-7 text-[#1A3322] transition-all duration-700 ease-out ${
                       visibleSections.has(index)
                         ? "translate-y-0 opacity-100"
                         : "translate-y-5 opacity-0"
@@ -224,16 +264,17 @@ export default function OurGoatsContent() {
                   </p>
 
                   {/* Points */}
-                  <div
-                    className={`space-y-2 sm:space-y-3 transition-all duration-700 ease-out ${
-                      visibleSections.has(index)
-                        ? "translate-y-0 opacity-100"
-                        : "translate-y-5 opacity-0"
-                    }`}
-                    style={{ transitionDelay: "480ms" }}
-                  >
+                  <div className="space-y-2 sm:space-y-3">
                     {breed.points.map((point, pointIndex) => (
-                      <div key={pointIndex} className="flex items-start gap-2 sm:gap-3">
+                      <div
+                        key={pointIndex}
+                        className={`flex items-start gap-2 sm:gap-3 transition-all duration-700 ease-out ${
+                          visibleSections.has(index)
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-5 opacity-0"
+                        }`}
+                        style={{ transitionDelay: `${480 + pointIndex * 100}ms` }}
+                      >
                         <span className="flex h-5 w-5 sm:h-6 sm:w-6 shrink-0 items-center justify-center rounded-full bg-[#2E7D32]/10 text-[#2E7D32] mt-0.5">
                           <svg
                             className="h-3 w-3 sm:h-3.5 sm:w-3.5"
@@ -263,14 +304,22 @@ export default function OurGoatsContent() {
                     }`}
                     style={{ transitionDelay: "600ms" }}
                   >
-                    <button className="bg-gradient-to-r from-[#1B5E20] to-[#2E7D32] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md font-medium text-[12px] sm:text-[13px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 w-fit flex items-center justify-center gap-2">
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="bg-linear-to-r from-[#1B5E20] to-[#2E7D32] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full font-medium text-[12px] sm:text-[13px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 w-fit flex items-center justify-center gap-2"
+                    >
                       <FaWhatsapp className="text-sm sm:text-base" />
                       WhatsApp
-                    </button>
-                    <button className="bg-[#505050] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md font-medium text-[12px] sm:text-[13px] hover:bg-[#4B5563] transition-all duration-300 ease-out shadow-[0_4px 20px_rgba(107,114,128,0.3)] hover:shadow-[0_6px 25px_rgba(107,114,128,0.4)] hover:-translate-y-0.5 w-fit flex items-center justify-center gap-2">
+                    </a>
+                    <Link
+                      href="/contact"
+                      className="bg-[#505050] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full font-medium text-[12px] sm:text-[13px] hover:bg-[#4B5563] transition-all duration-300 ease-out shadow-[0_4px 20px_rgba(107,114,128,0.3)] hover:shadow-[0_6px 25px_rgba(107,114,128,0.4)] hover:-translate-y-0.5 w-fit flex items-center justify-center gap-2"
+                    >
                       Contact Us
                       <FaLongArrowAltRight className="text-xs" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

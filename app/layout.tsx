@@ -5,6 +5,7 @@ import Header2 from "@/components/Header2";
 import Footer from "@/components/Footer";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import StructuredData from "@/components/StructuredData";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -74,6 +75,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <StructuredData/>
+        <SmoothScroll/>
         <Header2/>
         {children}
         <Footer/>

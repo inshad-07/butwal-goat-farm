@@ -1,12 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaLongArrowAltRight, FaWhatsapp } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
 export default function GoatBreedsSection() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const [showSectionContent, setShowSectionContent] = useState(false);
+  const whatsappNumber = "9779847044546";
+  const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -58,32 +62,20 @@ export default function GoatBreedsSection() {
   ];
 
   return (
-    <section className="flex w-full items-center overflow-hidden bg-white py-12 md:py-16 lg:py-20 font-sans">
+    <section className="flex w-full items-center overflow-hidden bg-white pt-6 pb-10 sm:pt-8 sm:pb-14 md:pt-12 md:pb-16 font-sans">
       <div ref={sectionRef} className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col space-y-8 md:space-y-12">
+        <div className="flex flex-col space-y-8 md:space-y-10">
           {/* Header */}
           <div className="text-center">
-            <div
-              className={`flex items-center justify-center gap-3 text-[#1A3322] font-medium tracking-widest text-[10px] sm:text-xs uppercase transition-all duration-700 ease-out ${
+            <h2
+              className={`text-2xl font-[350] leading-tight text-[#1A3322] md:text-4xl mb-3 transition-all duration-700 ease-out ${
                 showSectionContent
                   ? "translate-y-0 opacity-100"
                   : "translate-y-5 opacity-0"
               }`}
               style={{ transitionDelay: "0ms" }}
             >
-              <span className="w-1 h-3 sm:h-4 bg-linear-to-b from-[#1B5E20] to-[#2E7D32] rounded-sm"></span>
-              <span>EXPLORE OUR COLLECTION</span>
-            </div>
-
-            <h2
-              className={`text-2xl sm:text-3xl md:text-[44px] font-[350] leading-8 sm:leading-10 md:leading-tight text-[#1A3322] mt-3 sm:mt-4 transition-all duration-700 ease-out ${
-                showSectionContent
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-5 opacity-0"
-              }`}
-              style={{ transitionDelay: "120ms" }}
-            >
-              Discover Our Premium Goat Breeds
+              Discover Our   <br className="block md:hidden" /> Premium Goat Breeds
             </h2>
 
             <p
@@ -92,14 +84,14 @@ export default function GoatBreedsSection() {
                   ? "translate-y-0 opacity-100"
                   : "translate-y-5 opacity-0"
               }`}
-              style={{ transitionDelay: "240ms" }}
+              style={{ transitionDelay: "120ms" }}
             >
               Explore our selected goat breeds, each with unique characteristics and farming potential.
             </p>
           </div>
 
           {/* Breeds Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-5">
             {breeds.map((breed, index) => (
               <div
                 key={breed.id}
@@ -108,7 +100,7 @@ export default function GoatBreedsSection() {
                     ? "translate-y-0 opacity-100"
                     : "translate-y-5 opacity-0"
                 }`}
-                style={{ transitionDelay: `${360 + index * 120}ms` }}
+                style={{ transitionDelay: `${240 + index * 120}ms` }}
               >
                 <div className="relative aspect-4/3.5 overflow-hidden p-2 sm:p-3">
                   <Image
@@ -141,14 +133,20 @@ export default function GoatBreedsSection() {
                   </div>
 
                   <div className="flex gap-2 sm:gap-3 mt-2">
-                    <button className="bg-linear-to-r from-[#1B5E20] to-[#2E7D32] text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-md font-medium text-[13px] sm:text-[15px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 flex-1 flex items-center justify-center gap-2">
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="bg-linear-to-r from-[#1B5E20] to-[#2E7D32] text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-full font-medium text-[13px] sm:text-[15px] hover:from-[#145A18] hover:to-[#1B5E20] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(27,94,32,0.3)] hover:shadow-[0_6px_25px_rgba(27,94,32,0.4)] hover:-translate-y-0.5 flex-1 flex items-center justify-center gap-2"
+                    >
                       <FaWhatsapp className="text-base sm:text-lg" />
                       WhatsApp
-                    </button>
-                    <button className="bg-[#505050] text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-md font-medium text-[13px] sm:text-[15px] hover:bg-[#4B5563] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(107,114,128,0.3)] hover:shadow-[0_6px_25px_rgba(107,114,128,0.4)] hover:-translate-y-0.5 flex-1 flex items-center justify-center gap-2">
+                    </a>
+                    <Link
+                      href="/our-goats" className="bg-[#505050] text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-full font-medium text-[13px] sm:text-[15px] hover:bg-[#4B5563] transition-all duration-300 ease-out shadow-[0_4px_20px_rgba(107,114,128,0.3)] hover:shadow-[0_6px_25px_rgba(107,114,128,0.4)] hover:-translate-y-0.5 flex-1 flex items-center justify-center gap-2">
                       View Details
                       <FaLongArrowAltRight className="text-xs sm:text-sm" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

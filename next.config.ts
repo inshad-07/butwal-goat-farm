@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import withPWA from "next-pwa";
 
 const nextConfig: NextConfig = {
+   allowedDevOrigins: ["10.51.248.89"],
   /* config options here */
   experimental: {
     agentFeedback: true,

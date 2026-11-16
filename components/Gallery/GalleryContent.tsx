@@ -64,32 +64,20 @@ export default function GalleryContent() {
   ];
 
   return (
-    <section className="flex w-full items-center overflow-hidden bg-[#1A3322]/2 py-12 md:py-16 lg:py-20 font-sans">
+    <section className="flex w-full items-center overflow-hidden bg-[#1A3322]/2 font-sans pt-8 pb-10 sm:pt-16 sm:pb-14 md:pt-20 md:pb-16">
       <div ref={sectionRef} className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col space-y-8 md:space-y-12">
           {/* Header */}
           <div className="text-center">
-            <div
-              className={`flex items-center justify-center gap-3 text-[#1A3322] font-medium tracking-widest text-[10px] sm:text-xs uppercase transition-all duration-700 ease-out ${
+            <h1
+              className={`text-2xl font-[350] leading-tight text-[#1A3322] md:text-4xl mb-3 transition-all duration-700 ease-out ${
                 showSectionContent
                   ? "translate-y-0 opacity-100"
                   : "translate-y-5 opacity-0"
               }`}
               style={{ transitionDelay: "0ms" }}
             >
-              <span className="w-1 h-3 sm:h-4 bg-linear-to-b from-[#1B5E20] to-[#2E7D32] rounded-sm"></span>
-              <span>OUR GALLERY</span>
-            </div>
-
-            <h1
-              className={`text-2xl sm:text-3xl md:text-[44px] font-[350] leading-8 sm:leading-10 md:leading-tight text-[#1A3322] mt-3 sm:mt-4 transition-all duration-700 ease-out ${
-                showSectionContent
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-5 opacity-0"
-              }`}
-              style={{ transitionDelay: "120ms" }}
-            >
-              Explore Our Goat Farm Gallery
+              Our Gallery
             </h1>
 
             <p
@@ -98,7 +86,7 @@ export default function GalleryContent() {
                   ? "translate-y-0 opacity-100"
                   : "translate-y-5 opacity-0"
               }`}
-              style={{ transitionDelay: "240ms" }}
+              style={{ transitionDelay: "120ms" }}
             >
               Take a visual tour of our premium goat farm. From healthy Boer goats to our breeding facilities,
               see the quality and care we put into raising our goats across Nepal.
@@ -116,7 +104,7 @@ export default function GalleryContent() {
                     ? "translate-y-0 opacity-100"
                     : "translate-y-5 opacity-0"
                 }`}
-                style={{ transitionDelay: `${360 + index * 100}ms` }}
+                style={{ transitionDelay: `${240 + index * 100}ms` }}
               >
                 <Image
                   src={image.src}
@@ -125,7 +113,7 @@ export default function GalleryContent() {
                   height={450}
                   className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
                   <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                     <h3 className="text-white text-lg sm:text-xl font-medium">{image.title}</h3>
                   </div>
