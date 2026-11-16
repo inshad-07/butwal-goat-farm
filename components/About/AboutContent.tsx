@@ -78,7 +78,7 @@ export default function AboutContent() {
               </div>
 
               {/* Title */}
-              <h2
+              <h1
                 className={`text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-[350] leading-8 sm:leading-10 md:leading-tight text-[#1A3322] transition-all duration-700 ease-out ${
                   showSectionContent
                     ? "translate-y-0 opacity-100"
@@ -87,7 +87,7 @@ export default function AboutContent() {
                 style={{ transitionDelay: "240ms" }}
               >
                 Premium Goat Breeding Excellence in Nepal
-              </h2>
+              </h1>
 
               {/* Description */}
               <p

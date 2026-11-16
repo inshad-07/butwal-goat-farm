@@ -36,21 +36,24 @@ export default function GoatBreedsSection() {
       name: "Boer Goat",
       description: "Known for its muscular body, strong build and meat-production potential. A popular choice for commercial goat breeding.",
       origin: "South Africa",
-      image: "/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp",
+      image: "/goat/boer-goat.webp",
+      alt: "Boer goat breed in pasture - premium meat goat for commercial farming",
     },
     {
       id: "02",
       name: "Barbari Goat",
       description: "A compact breed recognized by its white coat with brown or reddish spots. Suitable for intensive and stall-fed farming systems.",
       origin: "India",
-      image: "/about/Educational-Goat-Breed-Identification.webp",
+      image: "/goat/barbari-goat.webp",
+      alt: "Barbari goat breed spotted white and brown - Indian dairy and meat goat",
     },
     {
       id: "03",
       name: "Sirohi Goat",
       description: "A medium-sized breed known for its compact body, brown coat and distinctive darker patches.",
       origin: "Rajasthan, India",
-      image: "/about/Labeled-Goats-in-a-Rural-Pasture.webp",
+      image: "/goat/sirohi-goat.webp",
+      alt: "Sirohi goat breed brown coat - dual purpose dairy and meat goat from Rajasthan",
     },
   ];
 
@@ -110,7 +113,7 @@ export default function GoatBreedsSection() {
                 <div className="relative aspect-4/3.5 overflow-hidden p-2 sm:p-3">
                   <Image
                     src={breed.image}
-                    alt={breed.name}
+                    alt={breed.alt}
                     width={600}
                     height={400}
                     className="w-full h-full object-cover rounded-xl"

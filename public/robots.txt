@@ -1,0 +1,10 @@
+# robots.txt for Butwal Goat Farm
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://butwal-goat-farm.vercel.app/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1

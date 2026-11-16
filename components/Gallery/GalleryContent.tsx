@@ -81,7 +81,7 @@ export default function GalleryContent() {
               <span>OUR GALLERY</span>
             </div>
 
-            <h2
+            <h1
               className={`text-2xl sm:text-3xl md:text-[44px] font-[350] leading-8 sm:leading-10 md:leading-tight text-[#1A3322] mt-3 sm:mt-4 transition-all duration-700 ease-out ${
                 showSectionContent
                   ? "translate-y-0 opacity-100"
@@ -90,7 +90,7 @@ export default function GalleryContent() {
               style={{ transitionDelay: "120ms" }}
             >
               Explore Our Goat Farm Gallery
-            </h2>
+            </h1>
 
             <p
               className={`text-gray-600 text-[13px] sm:text-[15px] leading-relaxed max-w-2xl mx-auto mt-3 sm:mt-4 px-2 transition-all duration-700 ease-out ${

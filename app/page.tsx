@@ -6,12 +6,12 @@ import HeroVideo from "@/components/Home/HeroVideo";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Home - Butwal Goat Farm | Premium Boer, Barbari, and Sirohi Goat Breeding in Nepal",
-  description: "Butwal Goat Farm delivers premium Boer, Barbari, and Sirohi goat breeding, indigenous goat farming, and dependable livestock services for commercial farmers across Nepal.",
-  keywords: ["goat breeding Nepal", "Boer goats Nepal", "Barbari goats", "Sirohi goats", "goat farm Nepal", "livestock Nepal", "commercial goat farming"],
+  title: "Home - Butwal Goat Farm | Premium Boer, Barbari, and Sirohi Goat Breeding in Butwal, Nepal",
+  description: "Butwal Goat Farm delivers premium Boer, Barbari, and Sirohi goat breeding, indigenous goat farming, and dependable livestock services for commercial farmers in Butwal, Lumbini Province, and across Nepal.",
+  keywords: ["goat farm Butwal", "goat breeding Butwal", "Boer goats Butwal", "Barbari goats Nepal", "Sirohi goats Nepal", "goat farm Lumbini Province", "goat farm Nepal", "livestock Nepal", "commercial goat farming Nepal", "indigenous goats Nepal", "goat for sale Butwal"],
   openGraph: {
-    title: "Butwal Goat Farm - Premium Goat Breeding in Nepal",
-    description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers across Nepal.",
+    title: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
+    description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers in Butwal, Lumbini Province, and across Nepal.",
     url: "https://butwal-goat-farm.vercel.app/",
     siteName: "Butwal Goat Farm",
     locale: "en_US",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Butwal Goat Farm - Premium Goat Breeding in Nepal",
-    description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers across Nepal.",
+    title: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
+    description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers in Butwal, Lumbini Province, and across Nepal.",
   },
   alternates: {
     canonical: "https://butwal-goat-farm.vercel.app/",
