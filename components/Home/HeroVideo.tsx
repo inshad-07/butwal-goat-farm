@@ -38,13 +38,23 @@ export default function HeroVideo() {
       <section className="relative flex min-h-[90svh] w-full overflow-hidden bg-black md:min-h-dvh">
         {/* Background Image */}
         <div className="absolute inset-0">
+          {/* Mobile Image */}
+          <Image
+            src="/home/Three-Goats-in-a-Sunny-Pasture-(1).webp"
+            alt="Premium Boer, Barbari, and Sirohi goat breeding farm in Nepal"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[58%_center] opacity-85 md:hidden"
+          />
+          {/* Desktop Image */}
           <Image
             src="/home/Three-Goats-in-a-Sunny-Pasture.webp"
             alt="Premium Boer, Barbari, and Sirohi goat breeding farm in Nepal"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[58%_center] opacity-85 md:object-center md:opacity-80"
+            className="hidden object-cover object-center opacity-80 md:block"
           />
         </div>
 
@@ -55,7 +65,7 @@ export default function HeroVideo() {
         <div className="relative z-10 flex min-h-[90svh] w-full items-end pb-24 pt-24 md:min-h-dvh md:items-end md:pb-24 md:pt-24 lg:pb-14 lg:pt-24">
           <div className="templateContainer w-full">
             <div className="w-full md:w-3/4 lg:w-1/2 mx-auto md:mx-0">
-              <div className="flex flex-col gap-3.5 items-start text-left md:gap-6">
+              <div className="flex flex-col gap-3.5 items-center text-center md:items-start md:text-left md:gap-6">
                 {/* Centered Heading */}
                 <h1 className="w-full max-w-82.5 font-heading text-[28px] capitalize font-semibold leading-8 tracking-[0.015em] text-white sm:max-w-130 sm:text-[38px] sm:leading-10.5 md:max-w-4xl md:text-[58px] md:leading-[58.2px]">
                   PREMIUM GOAT
