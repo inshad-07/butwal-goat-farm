@@ -259,9 +259,9 @@ export default function ContactSection() {
                     Office Address
                   </h3>
                   <p className="text-[15px] leading-relaxed text-gray-600">
-                    Shankharapur, Chapakobot, Nanglebhare,
+                    Butwal,
                     <br />
-                    Kathmandu, Nepal
+                    Lumbini Province 32907, Nepal
                   </p>
                 </div>
               </div>
@@ -286,17 +286,10 @@ export default function ContactSection() {
                     <div className="flex flex-wrap gap-x-3 gap-y-1">
                       <span className="w-14 text-gray-400">Mobile:</span>
                       <a
-                        href="tel:+9779845328462"
+                        href="tel:+9779847044546"
                         className="transition-colors hover:text-[#1A3322]"
                       >
-                        +977 9845328462
-                      </a>
-                      <span className="text-gray-300">|</span>
-                      <a
-                        href="tel:+9779851032739"
-                        className="transition-colors hover:text-[#1A3322]"
-                      >
-                        +977 9851032739
+                        +977 9847044546
                       </a>
                     </div>
                     {/* <div className="flex gap-x-3">
@@ -329,16 +322,10 @@ export default function ContactSection() {
                   </h3>
                   <div className="space-y-1 text-[15px] leading-relaxed text-gray-600">
                     <a
-                      href="mailto:info@goatfirm.com"
+                      href="mailto:ainshad711@gmail.com"
                       className="block break-all transition-colors hover:text-[#1A3322]"
                     >
-                      info@goatfirm.com
-                    </a>
-                    <a
-                      href="mailto:sales@goatfirm.com"
-                      className="block break-all transition-colors hover:text-[#1A3322]"
-                    >
-                      sales@goatfirm.com
+                      ainshad711@gmail.com
                     </a>
                   </div>
                 </div>

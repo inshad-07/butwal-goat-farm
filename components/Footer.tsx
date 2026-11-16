@@ -23,7 +23,7 @@ export default function Footer() {
             <Link href="/" className="mb-6 inline-flex items-center">
               <Image
                 src="/logo/white-text-logo.webp"
-                alt="Goat Firm Premium Boer, Barbari, and Sirohi Goat Breeding logo"
+                alt="Butwal Goat Farm Premium Boer, Barbari, and Sirohi Goat Breeding logo"
                 width={190}
                 height={76}
                 className="h-20 w-auto"
@@ -41,36 +41,36 @@ export default function Footer() {
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Visit Goat Firm on Facebook"
+                aria-label="Visit Butwal Goat Farm on Facebook"
                 className="hover:text-[#1B5E20] transition-colors"
               >
                 <FaFacebookF size={18} />
                 <span className="sr-only">
-                  Visit Goat Firm on Facebook
+                  Visit Butwal Goat Farm on Facebook
                 </span>
               </a>
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Visit Goat Firm on Instagram"
+                aria-label="Visit Butwal Goat Farm on Instagram"
                 className="hover:text-[#1B5E20] transition-colors"
               >
                 <FaInstagram size={19} />
                 <span className="sr-only">
-                  Visit Goat Firm on Instagram
+                  Visit Butwal Goat Farm on Instagram
                 </span>
               </a>
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Contact Goat Firm on WhatsApp"
+                aria-label="Contact Butwal Goat Farm on WhatsApp"
                 className="hover:text-[#1B5E20] transition-colors"
               >
                 <FaWhatsapp size={19} />
                 <span className="sr-only">
-                  Contact Goat Firm on WhatsApp
+                  Contact Butwal Goat Farm on WhatsApp
                 </span>
               </a>
             </div>
@@ -165,9 +165,9 @@ export default function Footer() {
                 <IoLocationSharp className="text-[#2E7D32]" /> Office Location
               </div>
               <p className="text-[15px] text-white/65 pl-6">
-                Shankharapur, Chapakobot, Nanglebhare,
+              Butwal,
                 <br />
-                Kathmandu, Nepal
+                Lumbini Province 32907, Nepal
               </p>
             </div>
 
@@ -184,17 +184,10 @@ export default function Footer() {
                   </span>
                   <div className="flex flex-wrap gap-x-3 gap-y-1">
                     <a
-                      href="tel:+9779845328462"
+                      href="tel:+9779847044546"
                       className="hover:text-[#1B5E20] transition-colors"
                     >
-                      +977 9845328462
-                    </a>
-                    <span className="text-white/30">|</span>
-                    <a
-                      href="tel:+9779851032739"
-                      className="hover:text-[#1B5E20] transition-colors"
-                    >
-                      +977 9851032739
+                      +977 9847044546
                     </a>
                   </div>
                 </div>
@@ -218,16 +211,10 @@ export default function Footer() {
               </div>
               <div className="pl-6 text-[15px] text-white/65 space-y-1">
                 <a
-                  href="mailto:info@goatfirm.com"
+                  href="mailto:ainshad711@gmail.com"
                   className="block hover:text-[#1B5E20] transition-colors"
                 >
-                  info@goatfirm.com
-                </a>
-                <a
-                  href="mailto:sales@goatfirm.com"
-                  className="block hover:text-[#1B5E20] transition-colors"
-                >
-                  sales@goatfirm.com
+                  ainshad711@gmail.com
                 </a>
               </div>
             </div>
@@ -240,7 +227,7 @@ export default function Footer() {
           <div>
             Copyright {currentYear} -{" "}
             <Link href="/" className="hover:text-[#1B5E20] transition-colors">
-              Goat Firm
+              Butwal Goat Farm
             </Link>
             . All rights reserved.
           </div>

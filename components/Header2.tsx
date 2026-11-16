@@ -58,36 +58,36 @@ export default function Header2() {
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Visit Goat Firm on Facebook"
+                aria-label="Visit Butwal Goat Farm on Facebook"
                 className="text-white hover:text-gray-200 transition-colors"
               >
                 <FaFacebookF size={16} />
                 <span className="sr-only">
-                  Visit Goat Firm on Facebook
+                  Visit Butwal Goat Farm on Facebook
                 </span>
               </a>
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Visit Goat Firm on Instagram"
+                aria-label="Visit Butwal Goat Farm on Instagram"
                 className="text-white hover:text-gray-200 transition-colors"
               >
                 <FaInstagram size={18} />
                 <span className="sr-only">
-                  Visit Goat Firm on Instagram
+                  Visit Butwal Goat Farm on Instagram
                 </span>
               </a>
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Contact Goat Firm on WhatsApp"
+                aria-label="Contact Butwal Goat Farm on WhatsApp"
                 className="text-white hover:text-gray-200 transition-colors"
               >
                 <FaWhatsapp size={18} />
                 <span className="sr-only">
-                  Contact Goat Firm on WhatsApp
+                  Contact Butwal Goat Farm on WhatsApp
                 </span>
               </a>
             </div>
@@ -104,7 +104,7 @@ export default function Header2() {
             >
               <div className="flex items-center text-[15px] font-medium">
                 <FaPhoneAlt className="mr-3" size={16} />
-                <span>Call Us: (+977) 9845328462</span>
+                <span>Call Us: (+977) 9847044546</span>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function Header2() {
                     ? "/logo/white-text-logo.webp"
                     : "/logo/black-text-logo.webp"
                 }
-                alt="Goat Firm"
+                alt="Butwal Goat Farm"
                 width={220}
                 height={88}
                 priority
@@ -196,7 +196,7 @@ export default function Header2() {
           <div className="flex h-16 items-center justify-between border-b border-gray-100 bg-[#ffffff] px-5">
             <Image
               src="/logo/black-text-logo.webp"
-              alt="Goat Firm"
+              alt="Butwal Goat Farm"
               width={200}
               height={80}
               className="h-12 w-auto"
@@ -228,43 +228,43 @@ export default function Header2() {
           <div className="mx-5 mt-4 pt-4 border-t border-gray-100">
             <div className="flex items-center text-[#2E7D32] font-medium text-lg mb-4">
               <FaPhoneAlt className="mr-3" size={16} />
-              <span>(+977) 9845328462</span>
+              <span>(+977) 9847044546</span>
             </div>
             <div className="flex space-x-6">
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Visit Goat Firm on Facebook"
+                aria-label="Visit Butwal Goat Farm on Facebook"
                 className="text-[#2E7D32] transition-colors hover:text-[#2E7D32]"
               >
                 <FaFacebookF size={20} />
                 <span className="sr-only">
-                  Visit Goat Firm on Facebook
+                  Visit Butwal Goat Farm on Facebook
                 </span>
               </a>
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Visit Goat Firm on Instagram"
+                aria-label="Visit Butwal Goat Farm on Instagram"
                 className="text-[#2E7D32] transition-colors hover:text-[#2E7D32]"
               >
                 <FaInstagram size={22} />
                 <span className="sr-only">
-                  Visit Goat Firm on Instagram
+                  Visit Butwal Goat Farm on Instagram
                 </span>
               </a>
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Contact Goat Firm on WhatsApp"
+                aria-label="Contact Butwal Goat Farm on WhatsApp"
                 className="text-[#2E7D32] transition-colors hover:text-[#2E7D32]"
               >
                 <FaWhatsapp size={22} />
                 <span className="sr-only">
-                  Contact Goat Firm on WhatsApp
+                  Contact Butwal Goat Farm on WhatsApp
                 </span>
               </a>
             </div>

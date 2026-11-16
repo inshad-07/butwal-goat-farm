@@ -1,8 +1,31 @@
+import type { Metadata } from "next";
 import AboutSection from "@/components/Home/AboutSection";
 import FaqSection from "@/components/Home/FaqSection";
 import GoatBreedsSection from "@/components/Home/GoatBreedsSection";
 import HeroVideo from "@/components/Home/HeroVideo";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Home - Butwal Goat Farm | Premium Boer, Barbari, and Sirohi Goat Breeding in Nepal",
+  description: "Butwal Goat Farm delivers premium Boer, Barbari, and Sirohi goat breeding, indigenous goat farming, and dependable livestock services for commercial farmers across Nepal.",
+  keywords: ["goat breeding Nepal", "Boer goats Nepal", "Barbari goats", "Sirohi goats", "goat farm Nepal", "livestock Nepal", "commercial goat farming"],
+  openGraph: {
+    title: "Butwal Goat Farm - Premium Goat Breeding in Nepal",
+    description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers across Nepal.",
+    url: "https://butwal-goat-farm.vercel.app/",
+    siteName: "Butwal Goat Farm",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Butwal Goat Farm - Premium Goat Breeding in Nepal",
+    description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers across Nepal.",
+  },
+  alternates: {
+    canonical: "https://butwal-goat-farm.vercel.app/",
+  },
+};
 
 export default function Home() {
   return (

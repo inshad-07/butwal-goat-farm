@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "Where are your goat farms located?",
     answer:
-      "Our breeding farms are located in key locations across Nepal including Kathmandu, Chitwan, and Salyan. We deliver goats to every district from our Chitwan facility.",
+      "Our breeding farm is located in Butwal, Lumbini Province. We deliver goats to every district across Nepal with transport charged separately based on distance and order size.",
   },
   {
     question: "What is the growth rate of Boer crossbreed goats?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "How can I order goats?",
     answer:
-      "Call +977 9845328462 or email us. You can visit our farm to see the animals and their parents before purchase. We deliver across Nepal with transport charged separately based on distance and order size.",
+      "Call +977 9847044546 or email ainshad711@gmail.com. You can visit our farm to see the animals and their parents before purchase. We deliver across Nepal with transport charged separately based on distance and order size.",
   },
 ];
 

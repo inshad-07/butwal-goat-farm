@@ -1,12 +1,13 @@
 {
-  "name": "Goat Firm - Premium Goat Breeding",
-  "short_name": "Goat Firm",
-  "description": "Goat Firm delivers premium Boer, Barbari, and Sirohi goat breeding, indigenous goat farming, and dependable livestock services for commercial farmers across Nepal.",
-  "start_url": "/",
+  "name": "Butwal Goat Farm - Premium Goat Breeding",
+  "short_name": "Butwal Goat Farm",
+  "description": "Butwal Goat Farm delivers premium Boer, Barbari, and Sirohi goat breeding, indigenous goat farming, and dependable livestock services for commercial farmers across Nepal.",
+  "start_url": "https://butwal-goat-farm.vercel.app/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1B5E20",
   "orientation": "portrait-primary",
+  "scope": "https://butwal-goat-farm.vercel.app/",
   "icons": [
     {
       "src": "/logo/black-text-logo.webp",
