@@ -20,6 +20,13 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Goat Firm - Premium Boer, Barbari, and Sirohi Goat Breeding in Nepal",
   description: "Goat Firm delivers premium Boer, Barbari, and Sirohi goat breeding, indigenous goat farming, and dependable livestock services for commercial farmers across Nepal.",
+  manifest: "/manifest.json",
+  themeColor: "#1B5E20",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Goat Firm",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
