@@ -4,6 +4,7 @@ import "./globals.css";
 import Header2 from "@/components/Header2";
 import Footer from "@/components/Footer";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
+import GoogleTranslateFloatingButton from "@/components/GoogleTranslateFloatingButton";
 import StructuredData from "@/components/StructuredData";
 import SmoothScroll from "@/components/SmoothScroll";
 
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <Footer/>
         <WhatsAppFloating/>
+        <GoogleTranslateFloatingButton/>
         </body>
     </html>
   );
