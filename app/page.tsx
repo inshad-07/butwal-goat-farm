@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Home - Butwal Goat Farm | Premium Boer, Barbari, and Sirohi Goat Breeding in Butwal, Nepal",
   description: "Butwal Goat Farm delivers premium Boer, Barbari, and Sirohi goat breeding, indigenous goat farming, and dependable livestock services for commercial farmers in Butwal, Lumbini Province, and across Nepal.",
   keywords: ["goat farm Butwal", "goat breeding Butwal", "Boer goats Butwal", "Barbari goats Nepal", "Sirohi goats Nepal", "goat farm Lumbini Province", "goat farm Nepal", "livestock Nepal", "commercial goat farming Nepal", "indigenous goats Nepal", "goat for sale Butwal"],
+  authors: [{ name: "Butwal Goat Farm" }],
+  creator: "Butwal Goat Farm",
+  publisher: "Butwal Goat Farm",
   openGraph: {
     title: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
     description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers in Butwal, Lumbini Province, and across Nepal.",

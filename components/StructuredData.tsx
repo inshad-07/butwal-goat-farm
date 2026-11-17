@@ -5,6 +5,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Butwal Goat Farm",
+    alternateName: "Butwal Goat Farm Nepal",
     description: "Premium Boer, Barbari, and Sirohi goat breeding in Nepal. We provide high-quality goat breeds and livestock services for commercial farmers across Nepal.",
     url: "https://butwal-goat-farm.vercel.app",
     logo: "https://butwal-goat-farm.vercel.app/logo/black-text-logo.webp",
@@ -42,6 +43,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Butwal Goat Farm",
+    alternateName: "Butwal Goat Farm Nepal",
     description: "Premium goat breeding farm in Butwal, Nepal. Specializing in Boer, Barbari, and Sirohi goat breeds for commercial farming.",
     url: "https://butwal-goat-farm.vercel.app",
     telephone: "+9779811449565",
@@ -68,6 +70,20 @@ export default function StructuredData() {
     ],
   };
 
+  const webSiteData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Butwal Goat Farm",
+    alternateName: "Butwal Goat Farm Nepal",
+    url: "https://butwal-goat-farm.vercel.app",
+    description: "Premium Boer, Barbari, and Sirohi goat breeding in Butwal, Nepal",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://butwal-goat-farm.vercel.app/?s={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   const breadcrumbData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -92,6 +108,11 @@ export default function StructuredData() {
         id="local-business-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessData) }}
+      />
+      <Script
+        id="website-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteData) }}
       />
       <Script
         id="breadcrumb-schema"
