@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import GalleryContent from "@/components/Gallery/GalleryContent";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Gallery - Butwal Goat Farm | See Our Premium Goats and Farm",
@@ -30,10 +31,36 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://butwal-goat-farm.vercel.app/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Gallery",
+      item: "https://butwal-goat-farm.vercel.app/gallery",
+    },
+  ],
+};
+
 export default function Page() {
     return (
-        <div>
-          <GalleryContent/>
-        </div>
+        <>
+          <Script
+            id="breadcrumb-schema-gallery"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+          />
+          <div>
+            <GalleryContent/>
+          </div>
+        </>
     );
 }

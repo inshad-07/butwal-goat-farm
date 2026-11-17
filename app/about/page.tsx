@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import AboutContent from "@/components/About/AboutContent";
 import MissionVision from "@/components/About/MissionVision";
 import Founder from "@/components/About/Founder";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "About Us - Butwal Goat Farm | Premium Goat Breeding Excellence in Nepal",
@@ -32,12 +33,38 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://butwal-goat-farm.vercel.app/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "About",
+      item: "https://butwal-goat-farm.vercel.app/about",
+    },
+  ],
+};
+
 export default function AboutPage() {
   return (
-    <div>
-      <AboutContent />
-      <MissionVision />
-      <Founder />
-    </div>
+    <>
+      <Script
+        id="breadcrumb-schema-about"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div>
+        <AboutContent />
+        <MissionVision />
+        <Founder />
+      </div>
+    </>
   );
 }

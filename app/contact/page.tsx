@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactSection from "@/components/Contact/ContactSection";
 import Map from "@/components/Contact/Map";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Contact Us - Butwal Goat Farm | Get in Touch for Premium Goat Breeding",
@@ -31,13 +32,39 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://butwal-goat-farm.vercel.app/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Contact",
+      item: "https://butwal-goat-farm.vercel.app/contact",
+    },
+  ],
+};
+
 export default function Page() {
     return (
-        <div>
-          <ContactSection/>
-          <div className="container mx-auto px-4 ">
-            <Map />
+        <>
+          <Script
+            id="breadcrumb-schema-contact"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+          />
+          <div>
+            <ContactSection/>
+            <div className="container mx-auto px-4 ">
+              <Map />
+            </div>
           </div>
-        </div>
+        </>
     );
 }

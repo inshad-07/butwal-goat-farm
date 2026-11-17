@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight, FaWhatsapp } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import Script from "next/script";
 
 export default function OurGoatsContent() {
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -94,8 +95,59 @@ export default function OurGoatsContent() {
     return () => observer.disconnect();
   }, []);
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Boer Goats",
+    description: "Boer goats are world-renowned for their exceptional meat production capabilities. Originating from South Africa, they are known for their muscular build, rapid growth rate, and high-quality meat yield.",
+    image: "https://butwal-goat-farm.vercel.app/goat/boer-goat.webp",
+    brand: {
+      "@type": "Brand",
+      name: "Butwal Goat Farm",
+    },
+    offers: {
+      "@type": "Offer",
+      price: "2500",
+      priceCurrency: "NPR",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "Butwal Goat Farm",
+      },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://butwal-goat-farm.vercel.app/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Our Goats",
+        item: "https://butwal-goat-farm.vercel.app/our-goats",
+      },
+    ],
+  };
+
   return (
     <>
+      <Script
+        id="product-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <Script
+        id="breadcrumb-schema-our-goats"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="min-h-screen pt-8 pb-10 sm:pt-16 sm:pb-14 md:pt-20 md:pb-10 bg-white">
         {/* Main Page Heading */}
         <section ref={headingRef} className="flex w-full items-center overflow-hidden font-sans">

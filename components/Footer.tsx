@@ -103,10 +103,10 @@ export default function Footer() {
 
                 <li>
                   <Link
-                    href="/product"
+                    href="/our-goats"
                     className="hover:text-[#1B5E20] transition-colors"
                   >
-                    Product
+                    Our Goats
                   </Link>
                 </li>
 
@@ -136,7 +136,7 @@ export default function Footer() {
               <ul className="space-y-3 text-[15px] text-white/65">
                 <li>
                   <Link
-                    href="/product"
+                    href="/our-goats"
                     className="hover:text-[#1B5E20] transition-colors"
                   >
                     Boer Goats
@@ -144,7 +144,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/product"
+                    href="/our-goats"
                     className="hover:text-[#1B5E20] transition-colors"
                   >
                     Barbari Goats
@@ -152,7 +152,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/product"
+                    href="/our-goats"
                     className="hover:text-[#1B5E20] transition-colors"
                   >
                     Sirohi Goats

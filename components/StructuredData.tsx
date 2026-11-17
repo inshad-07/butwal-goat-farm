@@ -68,6 +68,19 @@ export default function StructuredData() {
     ],
   };
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://butwal-goat-farm.vercel.app/",
+      },
+    ],
+  };
+
   return (
     <>
       <Script
@@ -79,6 +92,11 @@ export default function StructuredData() {
         id="local-business-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessData) }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
     </>
   );
