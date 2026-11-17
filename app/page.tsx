@@ -21,11 +21,20 @@ export const metadata: Metadata = {
     siteName: "Butwal Goat Farm",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/logo/Butwal-Goat-Farm-Logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
     description: "Premium Boer, Barbari, and Sirohi goat breeding for commercial farmers in Butwal, Lumbini Province, and across Nepal.",
+    images: ["/logo/Butwal-Goat-Farm-Logo.webp"],
   },
   alternates: {
     canonical: "https://butwal-goat-farm.vercel.app/",

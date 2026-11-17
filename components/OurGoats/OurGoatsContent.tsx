@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight, FaWhatsapp } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
-import Script from "next/script";
 
 export default function OurGoatsContent() {
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -53,69 +52,7 @@ export default function OurGoatsContent() {
     },
   ];
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    itemListElement: [
-      {
-        "@type": "Product",
-        position: 1,
-        name: "Boer Goats",
-        description: "Boer goats are world-renowned for their exceptional meat production capabilities. Originating from South Africa, they are known for their muscular build, rapid growth rate, and high-quality meat yield, making them the top choice for commercial goat farming.",
-        image: "https://butwal-goat-farm.vercel.app/goat/boer-goat.webp",
-        brand: {
-          "@type": "Organization",
-          name: "Butwal Goat Farm"
-        },
-        offers: {
-          "@type": "Offer",
-          lowPrice: "1900",
-          highPrice: "2500",
-          priceCurrency: "NPR",
-          availability: "https://schema.org/InStock",
-          url: "https://butwal-goat-farm.vercel.app/our-goats"
-        }
-      },
-      {
-        "@type": "Product",
-        position: 2,
-        name: "Barbari Goats",
-        description: "Barbari goats are one of the most popular indigenous breeds in Nepal, well-adapted to local conditions. They are known for their dual-purpose utility - both meat and milk production, making them ideal for small farmers.",
-        image: "https://butwal-goat-farm.vercel.app/goat/barbari-goat.webp",
-        brand: {
-          "@type": "Organization",
-          name: "Butwal Goat Farm"
-        },
-        offers: {
-          "@type": "Offer",
-          lowPrice: "900",
-          highPrice: "1500",
-          priceCurrency: "NPR",
-          availability: "https://schema.org/InStock",
-          url: "https://butwal-goat-farm.vercel.app/our-goats"
-        }
-      },
-      {
-        "@type": "Product",
-        position: 3,
-        name: "Sirohi Goats",
-        description: "Sirohi goats are a hardy dual-purpose breed from Rajasthan, India, known for their adaptability to various climatic conditions. They have a distinctive brown coat with darker patches and are valued for both meat and milk production.",
-        image: "https://butwal-goat-farm.vercel.app/goat/sirohi-goat.webp",
-        brand: {
-          "@type": "Organization",
-          name: "Butwal Goat Farm"
-        },
-        offers: {
-          "@type": "Offer",
-          lowPrice: "900",
-          highPrice: "1500",
-          priceCurrency: "NPR",
-          availability: "https://schema.org/InStock",
-          url: "https://butwal-goat-farm.vercel.app/our-goats"
-        }
-      }
-    ]
-  };
+
 
   useEffect(() => {
     const observers = sectionRefs.current.map((ref, index) => {
@@ -330,11 +267,6 @@ export default function OurGoatsContent() {
           </section>
         ))}
       </div>
-      <Script
-        id="product-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
     </>
   );
 }

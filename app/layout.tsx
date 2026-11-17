@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
-      { url: "/logo/black-text-logo.webp", sizes: "any", type: "image/webp" },
+      { url: "/logo/Butwal-Goat-Farm-Logo.webp", sizes: "any", type: "image/webp" },
     ],
-    apple: "/logo/black-text-logo.webp",
+    apple: "/logo/Butwal-Goat-Farm-Logo.webp",
   },
   appleWebApp: {
     capable: true,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo/black-text-logo.webp",
+        url: "/logo/Butwal-Goat-Farm-Logo.webp",
         width: 1200,
         height: 630,
         alt: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
     description: "Leading goat breeding farm in Butwal, Nepal. Premium Boer, Barbari, and Sirohi goat breeds for commercial farmers.",
-    images: ["/logo/black-text-logo.webp"],
+    images: ["/logo/Butwal-Goat-Farm-Logo.webp"],
   },
   alternates: {
     canonical: "https://butwal-goat-farm.vercel.app/",

@@ -10,11 +10,20 @@ export const metadata: Metadata = {
     description: "Discover Butwal Goat Farm's premium goat breeds including Boer, Barbari, and Sirohi in Butwal, Nepal.",
     url: "https://butwal-goat-farm.vercel.app/our-goats",
     type: "website",
+    images: [
+      {
+        url: "/logo/Butwal-Goat-Farm-Logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Our Goats - Butwal Goat Farm",
     description: "Discover Butwal Goat Farm's premium goat breeds including Boer, Barbari, and Sirohi in Butwal, Nepal.",
+    images: ["/logo/Butwal-Goat-Farm-Logo.webp"],
   },
   alternates: {
     canonical: "https://butwal-goat-farm.vercel.app/our-goats",
