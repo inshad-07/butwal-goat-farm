@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppFloating() {
   const [showTooltip, setShowTooltip] = useState(false);
-  const whatsappNumber = "9779847044546";
+  const whatsappNumber = "9779811449565";
   const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 

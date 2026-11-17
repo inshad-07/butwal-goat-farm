@@ -286,10 +286,10 @@ export default function ContactSection() {
                     <div className="flex flex-wrap gap-x-3 gap-y-1">
                       <span className="w-14 text-gray-400">Mobile:</span>
                       <a
-                        href="tel:+9779847044546"
+                        href="tel:+9779811449565"
                         className="transition-colors hover:text-[#1A3322]"
                       >
-                        +977 9847044546
+                        +977 981-1449565
                       </a>
                     </div>
                     {/* <div className="flex gap-x-3">

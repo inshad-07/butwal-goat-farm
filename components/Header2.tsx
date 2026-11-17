@@ -26,7 +26,7 @@ export default function Header2() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const isTransparent = isHomePage && !isScrolled;
-  const whatsappNumber = "9779847044546";
+  const whatsappNumber = "9779811449565";
   const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const navLinkClass = `relative rounded-full px-3 py-2 text-[15px] font-medium transition-all duration-300 after:absolute after:bottom-1 after:left-3 after:right-3 after:h-[2px] after:origin-left after:scale-x-0 after:rounded-full after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100 ${
@@ -107,7 +107,7 @@ export default function Header2() {
             >
               <div className="flex items-center text-[15px] font-medium">
                 <FaPhoneAlt className="mr-3" size={16} />
-                <span>Call Us: (+977) 9847044546</span>
+                <span>Call Us: (+977) 981-1449565</span>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function Header2() {
             {/* Mobile Menu Toggle Button */}
             <div className="lg:hidden flex items-center gap-2">
               <a
-                href="tel:+9779847044546"
+                href="tel:+9779811449565"
                 className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors ${
                   isTransparent
                     ? "text-white border border-white hover:border-[#2E7D32] hover:text-[#2E7D32]"
@@ -242,7 +242,7 @@ export default function Header2() {
           <div className="mx-5 mt-4 pt-4 border-t border-gray-100">
             <div className="flex items-center text-[#2E7D32] font-medium text-[15px] mb-4">
               <FaPhoneAlt className="mr-3" size={16} />
-              <span>(+977) 9847044546</span>
+              <span>(+977) 981-1449565</span>
             </div>
             <div className="flex space-x-6">
               <a

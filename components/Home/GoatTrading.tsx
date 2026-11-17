@@ -11,7 +11,7 @@ export default function GoatTrading() {
   const [showSectionContent, setShowSectionContent] = useState(false);
   const [animateStats, setAnimateStats] = useState(false);
   const [countedValues, setCountedValues] = useState({ goats: 0, farmers: 0, districts: 0, quality: 0 });
-  const whatsappNumber = "9779847044546";
+  const whatsappNumber = "9779811449565";
   const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 

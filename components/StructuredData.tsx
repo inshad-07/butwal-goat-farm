@@ -8,7 +8,7 @@ export default function StructuredData() {
     description: "Premium Boer, Barbari, and Sirohi goat breeding in Nepal. We provide high-quality goat breeds and livestock services for commercial farmers across Nepal.",
     url: "https://butwal-goat-farm.vercel.app",
     logo: "https://butwal-goat-farm.vercel.app/logo/black-text-logo.webp",
-    telephone: "+9779847044546",
+    telephone: "+9779811449565",
     email: "info@butwalgoatfarm.com",
     address: {
       "@type": "PostalAddress",
@@ -32,7 +32,7 @@ export default function StructuredData() {
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+9779847044546",
+      telephone: "+9779811449565",
       contactType: "customer service",
       availableLanguage: ["English", "Nepali"],
     },
@@ -44,7 +44,7 @@ export default function StructuredData() {
     name: "Butwal Goat Farm",
     description: "Premium goat breeding farm in Butwal, Nepal. Specializing in Boer, Barbari, and Sirohi goat breeds for commercial farming.",
     url: "https://butwal-goat-farm.vercel.app",
-    telephone: "+9779847044546",
+    telephone: "+9779811449565",
     address: {
       "@type": "PostalAddress",
       streetAddress: "MFQ7+M5M",

@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState<number>(2025);
-  const whatsappNumber = "9779847044546";
+  const whatsappNumber = "9779811449565";
   const whatsappMessage = "Hello! I'm interested in your goat breeding services.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -187,10 +187,10 @@ export default function Footer() {
                   </span>
                   <div className="flex flex-wrap gap-x-3 gap-y-1">
                     <a
-                      href="tel:+9779847044546"
+                      href="tel:+9779811449565"
                       className="hover:text-[#1B5E20] transition-colors"
                     >
-                      +977 9847044546
+                      +977 981-1449565
                     </a>
                   </div>
                 </div>
