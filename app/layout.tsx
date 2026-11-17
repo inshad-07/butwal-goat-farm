@@ -7,6 +7,7 @@ import WhatsAppFloating from "@/components/WhatsAppFloating";
 import GoogleTranslateFloatingButton from "@/components/GoogleTranslateFloatingButton";
 import StructuredData from "@/components/StructuredData";
 import SmoothScroll from "@/components/SmoothScroll";
+import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Footer/>
         <WhatsAppFloating/>
         <GoogleTranslateFloatingButton/>
+        <ServiceWorkerRegistration/>
         </body>
     </html>
   );
