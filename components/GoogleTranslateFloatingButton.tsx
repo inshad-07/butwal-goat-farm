@@ -112,7 +112,7 @@ function ensureTranslateScript(): Promise<void> {
       clearInterval(i);
       window.__googleTranslateScriptReady = true;
       resolve();
-    }, 5000);
+    }, 2000);
   });
 }
 
@@ -172,7 +172,7 @@ async function applyTranslation(code: LangCode) {
       /* ignore */
     }
     window.location.reload();
-  }, 1500);
+  }, 500);
 }
 
 const GoogleTranslateFloatingButton = () => {
@@ -208,7 +208,7 @@ const GoogleTranslateFloatingButton = () => {
         ensureTranslateScript().then(() => applyTranslation(saved));
       };
       if (document.readyState === "complete" || document.readyState === "interactive") {
-        setTimeout(kickoff, 300);
+        setTimeout(kickoff, 100);
       } else {
         window.addEventListener("DOMContentLoaded", kickoff);
       }
