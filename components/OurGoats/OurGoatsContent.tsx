@@ -69,7 +69,8 @@ export default function OurGoatsContent() {
         },
         offers: {
           "@type": "Offer",
-          price: "1900-2500",
+          lowPrice: "1900",
+          highPrice: "2500",
           priceCurrency: "NPR",
           availability: "https://schema.org/InStock",
           url: "https://butwal-goat-farm.vercel.app/our-goats"
@@ -87,7 +88,8 @@ export default function OurGoatsContent() {
         },
         offers: {
           "@type": "Offer",
-          price: "900-1500",
+          lowPrice: "900",
+          highPrice: "1500",
           priceCurrency: "NPR",
           availability: "https://schema.org/InStock",
           url: "https://butwal-goat-farm.vercel.app/our-goats"
@@ -105,7 +107,8 @@ export default function OurGoatsContent() {
         },
         offers: {
           "@type": "Offer",
-          price: "900-1500",
+          lowPrice: "900",
+          highPrice: "1500",
           priceCurrency: "NPR",
           availability: "https://schema.org/InStock",
           url: "https://butwal-goat-farm.vercel.app/our-goats"
