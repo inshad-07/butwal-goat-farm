@@ -24,7 +24,21 @@ export default function HeroVideo() {
 
         {/* Content Container - Scrollable */}
         <div className="relative z-10 flex h-full w-full items-end overflow-y-auto pb-12 pt-24 md:items-end md:pb-24 md:pt-24 lg:pb-14 lg:pt-24">
-          <div className="templateContainer w-full">
+          <div className="templateContainer w-full" style={{
+            animation: 'fadeUp 1s ease-out forwards'
+          }}>
+            <style>{`
+              @keyframes fadeUp {
+                from {
+                  opacity: 0;
+                  transform: translateY(30px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
+            `}</style>
             <div className="w-full md:w-3/4 lg:w-1/2 mx-auto md:mx-0">
               <div className="flex flex-col gap-3.5 items-center text-center md:items-start md:text-left md:gap-6">
                 {/* Centered Heading */}
