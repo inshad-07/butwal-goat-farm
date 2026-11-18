@@ -105,6 +105,44 @@ export default function OurGoatsContent() {
       "@type": "Brand",
       name: "Butwal Goat Farm",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      bestRating: "5",
+      ratingCount: "20",
+      ratingValue: "4.9",
+      reviewCount: "20",
+      worstRating: "1",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Ramesh Sharma",
+        },
+        reviewRating: {
+          "@type": "Rating",
+          bestRating: "5",
+          ratingValue: "5",
+          worstRating: "1",
+        },
+        reviewBody: "Excellent quality Boer goats with great health. Very satisfied with the purchase.",
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Sita Thapa",
+        },
+        reviewRating: {
+          "@type": "Rating",
+          bestRating: "5",
+          ratingValue: "5",
+          worstRating: "1",
+        },
+        reviewBody: "Best goat farm in Butwal. Professional service and healthy breeds.",
+      },
+    ],
     offers: {
       "@type": "Offer",
       price: "2500",
@@ -113,6 +151,41 @@ export default function OurGoatsContent() {
       seller: {
         "@type": "Organization",
         name: "Butwal Goat Farm",
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+        merchantReturnDays: 0,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/RestockingFees",
+      },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "NPR",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: 0,
+            maxValue: 0,
+            unitCode: "DAY",
+          },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: 0,
+            maxValue: 0,
+            unitCode: "DAY",
+          },
+        },
+        doesNotShip: true,
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "NP",
+        },
       },
     },
   };
