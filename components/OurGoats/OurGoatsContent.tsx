@@ -152,41 +152,6 @@ export default function OurGoatsContent() {
         "@type": "Organization",
         name: "Butwal Goat Farm",
       },
-      hasMerchantReturnPolicy: {
-        "@type": "MerchantReturnPolicy",
-        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
-        merchantReturnDays: 0,
-        returnMethod: "https://schema.org/ReturnByMail",
-        returnFees: "https://schema.org/RestockingFees",
-      },
-      shippingDetails: {
-        "@type": "OfferShippingDetails",
-        shippingRate: {
-          "@type": "MonetaryAmount",
-          value: "0",
-          currency: "NPR",
-        },
-        deliveryTime: {
-          "@type": "ShippingDeliveryTime",
-          handlingTime: {
-            "@type": "QuantitativeValue",
-            minValue: 0,
-            maxValue: 0,
-            unitCode: "DAY",
-          },
-          transitTime: {
-            "@type": "QuantitativeValue",
-            minValue: 0,
-            maxValue: 0,
-            unitCode: "DAY",
-          },
-        },
-        doesNotShip: true,
-        shippingDestination: {
-          "@type": "DefinedRegion",
-          addressCountry: "NP",
-        },
-      },
     },
   };
 
