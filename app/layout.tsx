@@ -29,13 +29,15 @@ export const metadata: Metadata = {
   authors: [{ name: "Butwal Goat Farm" }],
   creator: "Butwal Goat Farm",
   publisher: "Butwal Goat Farm",
+  applicationName: "Butwal Goat Farm",
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
-      { url: "/logo/Butwal-Goat-Farm-Logo.webp", sizes: "any", type: "image/webp" },
+      { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
     ],
-    apple: "/logo/Butwal-Goat-Farm-Logo.webp",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   appleWebApp: {
     capable: true,
@@ -44,6 +46,10 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "3NIS_M6iMQmn4sAcqIcHc-fxTP6ONeURbBDf9R-PK80",
+  },
+  other: {
+    "application-name": "Butwal Goat Farm",
+    "apple-mobile-web-app-title": "Butwal Goat Farm",
   },
   openGraph: {
     title: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
