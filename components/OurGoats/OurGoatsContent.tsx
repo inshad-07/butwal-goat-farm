@@ -95,66 +95,6 @@ export default function OurGoatsContent() {
     return () => observer.disconnect();
   }, []);
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Boer Goats",
-    description: "Boer goats are world-renowned for their exceptional meat production capabilities. Originating from South Africa, they are known for their muscular build, rapid growth rate, and high-quality meat yield.",
-    image: "https://butwal-goat-farm.vercel.app/goat/boer-goat.webp",
-    brand: {
-      "@type": "Brand",
-      name: "Butwal Goat Farm",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      bestRating: "5",
-      ratingCount: "20",
-      ratingValue: "4.9",
-      reviewCount: "20",
-      worstRating: "1",
-    },
-    review: [
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Ramesh Sharma",
-        },
-        reviewRating: {
-          "@type": "Rating",
-          bestRating: "5",
-          ratingValue: "5",
-          worstRating: "1",
-        },
-        reviewBody: "Excellent quality Boer goats with great health. Very satisfied with the purchase.",
-      },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Sita Thapa",
-        },
-        reviewRating: {
-          "@type": "Rating",
-          bestRating: "5",
-          ratingValue: "5",
-          worstRating: "1",
-        },
-        reviewBody: "Best goat farm in Butwal. Professional service and healthy breeds.",
-      },
-    ],
-    offers: {
-      "@type": "Offer",
-      price: "2500",
-      priceCurrency: "NPR",
-      availability: "https://schema.org/InStock",
-      seller: {
-        "@type": "Organization",
-        name: "Butwal Goat Farm",
-      },
-    },
-  };
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -176,11 +116,6 @@ export default function OurGoatsContent() {
 
   return (
     <>
-      <Script
-        id="product-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
       <Script
         id="breadcrumb-schema-our-goats"
         type="application/ld+json"
