@@ -75,13 +75,13 @@ export default function GoatTrading() {
       setCountedValues({
         goats: Math.floor(500 * easeOut),
         farmers: Math.floor(200 * easeOut),
-        districts: Math.floor(50 * easeOut),
+        districts: Math.floor(77 * easeOut),
         quality: Math.floor(100 * easeOut),
       });
 
       if (step >= steps) {
         clearInterval(timer);
-        setCountedValues({ goats: 500, farmers: 200, districts: 50, quality: 100 });
+        setCountedValues({ goats: 500, farmers: 200, districts: 77, quality: 100 });
       }
     }, interval);
 
@@ -113,7 +113,7 @@ export default function GoatTrading() {
               }`}
               style={{ transitionDelay: "120ms" }}
             >
-              Premium goats from our farm and a trusted marketplace for farmers across Nepal.
+              Premium goats from our farm and a trusted marketplace for farmers across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and all of Nepal.
             </p>
           </div>
 
@@ -144,7 +144,7 @@ export default function GoatTrading() {
                     Our Premium Goats
                   </h3>
                   <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
-                    Buy healthy Boer, Barbari, Sirohi, and indigenous goats directly from our farm with guaranteed quality and health.
+                    Buy healthy Boer, Barbari, Sirohi, and indigenous goats directly from our farm with guaranteed quality and health. Serving farmers across Nepal.
                   </p>
                   <a
                     href={whatsappLink}
@@ -173,7 +173,7 @@ export default function GoatTrading() {
                     Our Premium Goats
                   </h3>
                   <p className="text-gray-200 text-sm sm:text-base leading-relaxed mb-4">
-                    Buy healthy Boer, Barbari, Sirohi, and indigenous goats directly from our farm with guaranteed quality and health.
+                    Buy healthy Boer, Barbari, Sirohi, and indigenous goats directly from our farm with guaranteed quality and health. Serving farmers across Nepal.
                   </p>
                   <a
                     href={whatsappLink}

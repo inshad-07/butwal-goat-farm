@@ -36,7 +36,7 @@ export default function Footer() {
             <p className="text-[15px] leading-relaxed mb-6 text-white/65">
               We sell premium Boer, Barbari, and Sirohi goats with
               indigenous goat farming and dependable livestock services for
-              commercial farmers across Nepal.
+              commercial farmers across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and all of Nepal.
             </p>
 
             <div className="flex space-x-4 text-white">

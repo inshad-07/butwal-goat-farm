@@ -154,7 +154,7 @@ export default function AboutSection() {
             >
               With Boer crossbreeds achieving 100-200 gm/day growth rates—nearly
               double native breeds—we help farmers upgrade their herds for
-              higher meat production. From Kathmandu to Chitwan, we deliver
+              higher meat production. From Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and across all of Nepal, we deliver
               superior breeding stock, technical training, and complete support
               for commercial goat farming success.
             </p>

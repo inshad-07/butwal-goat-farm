@@ -5,11 +5,11 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Contact Us - Butwal Goat Farm | Get in Touch for Premium Goat Breeding",
-  description: "Contact Butwal Goat Farm for premium Boer, Barbari, and Sirohi goat breeding services in Nepal. Reach out for inquiries, partnerships, and farm support.",
-  keywords: ["contact goat farm Nepal", "goat breeding inquiry", "buy goats Nepal", "goat farm partnership", "livestock services Nepal"],
+  description: "Contact Butwal Goat Farm for premium Boer, Barbari, and Sirohi goat breeding services across Nepal. Reach out for inquiries, partnerships, and farm support from Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and all of Nepal.",
+  keywords: ["contact goat farm Nepal", "goat breeding inquiry", "buy goats Nepal", "goat farm partnership", "livestock services Nepal", "goat farm Kathmandu", "goat farm Pokhara", "goat farm Chitwan", "goat farm Biratnagar", "goat farm Butwal"],
   openGraph: {
     title: "Contact Us - Butwal Goat Farm",
-    description: "Contact Butwal Goat Farm for premium goat breeding services in Nepal.",
+    description: "Contact Butwal Goat Farm for premium goat breeding services across Nepal.",
     url: "https://butwal-goat-farm.vercel.app/contact",
     type: "website",
     images: [
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
         url: "/logo/Butwal-Goat-Farm-Logo.webp",
         width: 1200,
         height: 630,
-        alt: "Butwal Goat Farm - Premium Goat Breeding in Butwal, Nepal",
+        alt: "Butwal Goat Farm - Premium Goat Breeding Across Nepal",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Us - Butwal Goat Farm",
-    description: "Contact Butwal Goat Farm for premium goat breeding services in Nepal.",
+    description: "Contact Butwal Goat Farm for premium goat breeding services across Nepal.",
     images: ["/logo/Butwal-Goat-Farm-Logo.webp"],
   },
   alternates: {
