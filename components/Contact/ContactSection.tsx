@@ -27,7 +27,11 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Thank you for your enquiry! Our goat farming team will connect with you shortly.");
+    const text = `*New Enquiry - Goat-Firm*\n\n*Name:* ${formData.fullName}\n*Email:* ${formData.email}\n*Phone:* ${formData.phone}\n*Subject:* ${formData.subject}\n\n*Message:*\n${formData.message}`;
+    window.open(
+      `https://wa.me/9779811449565?text=${encodeURIComponent(text)}`,
+      "_blank",
+    );
     setFormData({
       fullName: "",
       email: "",
@@ -259,7 +263,7 @@ export default function ContactSection() {
                     Office Address
                   </h3>
                   <p className="text-[15px] leading-relaxed text-gray-600">
-                    Butwal,
+                    Butwal, Rupandehi District,
                     <br />
                     Lumbini Province 32907, Nepal
                   </p>

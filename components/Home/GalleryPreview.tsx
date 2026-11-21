@@ -28,35 +28,25 @@ export default function GalleryPreview() {
 
   const galleryImages = [
     {
-      src: "/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp",
+      src: "/about/boer-goats-feeding-at-trough.webp",
       alt: "Boer goats feeding at trough",
       title: "Boer Goats"
     },
     {
-      src: "/about/Educational-Goat-Breed-Identification.webp",
+      src: "/about/khari-goats-pastoral-field-nepal.webp",
       alt: "Khari goat indigenous breed",
       title: "Khari Breed"
     },
     {
-      src: "/about/Labeled-Goats-in-a-Rural-Pasture.webp",
-      alt: "Goats in rural pasture",
-      title: "Pasture Grazing"
+      src: "/goat/goat-rocky-mountain-hillside.webp",
+      alt: "Goat resting on a rocky mountainside",
+      title: "Mountain Goats"
     },
     {
-      src: "/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp",
-      alt: "Boer goats feeding at trough",
-      title: "Boer Goats"
-    },
-    {
-      src: "/about/Educational-Goat-Breed-Identification.webp",
-      alt: "Khari goat indigenous breed",
-      title: "Khari Breed"
-    },
-    {
-      src: "/about/Labeled-Goats-in-a-Rural-Pasture.webp",
-      alt: "Goats in rural pasture",
-      title: "Pasture Grazing"
-    },
+      src: "/goat/khari-goat-sunlit-rural-field-nepal.webp",
+      alt: "Khari goat grazing in a sunlit field",
+      title: "Khari in Pasture"
+    }
   ];
 
   useEffect(() => {
@@ -157,11 +147,6 @@ export default function GalleryPreview() {
                           height={450}
                           className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                         />
-                        <div className="absolute inset-0 bg-linear-to-t from-[#1A3322]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                          <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                            <h3 className="text-white text-lg sm:text-xl font-medium">{image.title}</h3>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   ))}

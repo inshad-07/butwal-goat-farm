@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "Where are your goat farms located?",
     answer:
-      "Our breeding farm is located in Butwal, Lumbini Province. We deliver goats to every district across Nepal with transport charged separately based on distance and order size.",
+      "Our breeding farm is located in Butwal, Lumbini Province, in the heart of Rupandehi district. We regularly deliver goats to farmers in Taulihawa, Bhairahawa, Siddharthanagar, Kapilvastu, and every other district across Nepal with transport charged separately based on distance and order size.",
   },
   {
     question: "What is the growth rate of Boer crossbreed goats?",

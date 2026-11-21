@@ -79,8 +79,8 @@ export default function Founder() {
               <div className="flex-shrink-0 w-full sm:w-auto">
                 <div className="aspect-[4/5] w-full sm:w-64 md:w-72 lg:w-80 rounded-xl sm:rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)]">
                   <Image
-                    src="/about/gfpfmvj2xvscl5vvlg25.webp"
-                    alt="Founder"
+                    src="/about/wazid-ali-founder-butwal-goat-farm.webp"
+                    alt="Wazid Ali, Founder and CEO of Butwal Goat Farm Nepal"
                     width={400}
                     height={500}
                     className="w-full h-full object-cover"

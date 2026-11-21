@@ -1,22 +1,64 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+
 export default function HeroVideo() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const bgRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const bg = bgRef.current;
+    if (!section || !bg) return;
+
+    const mq = window.matchMedia("(min-width: 768px)");
+    let raf = 0;
+    let sectionTop = 0;
+
+    const update = () => {
+      raf = 0;
+      const y = Math.max(0, window.scrollY - sectionTop);
+      bg.style.transform = mq.matches ? `translateY(${y}px)` : "";
+    };
+
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+
+    const measure = () => {
+      sectionTop = section.getBoundingClientRect().top + window.scrollY;
+      update();
+    };
+
+    measure();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", measure);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", measure);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, []);
 
   return (
     <>
-      <section className="relative flex h-[90svh] w-full overflow-hidden bg-black md:h-dvh">
-        {/* Background Image Wrapper - Clips to section */}
+      <section ref={sectionRef} className="relative flex h-[90svh] w-full overflow-hidden bg-black md:h-dvh">
+        {/* Background Image - Clips to section */}
         <div className="absolute inset-0 overflow-hidden">
-          {/* Mobile Background - No fixed attachment */}
-          <div className="absolute inset-0 bg-cover bg-position-[58%_center] opacity-85 md:bg-center md:opacity-80 md:hidden" style={{
-            backgroundImage: 'url("/home/Three-Goats-in-a-Sunny-Pasture-(1).webp")',
-          }}></div>
-
-          {/* Desktop Background - Fixed attachment */}
-          <div className="absolute inset-0 hidden bg-cover bg-center opacity-80 md:block" style={{
-            backgroundImage: 'url("/home/Three-Goats-in-a-Sunny-Pasture.webp")',
-            backgroundAttachment: 'fixed',
-          }}></div>
+          <div ref={bgRef} className="absolute inset-x-0 top-0 h-dvh will-change-transform">
+            <picture className="block h-full w-full">
+              <source
+                media="(min-width: 768px)"
+                srcSet="/home/three-goats-sunny-pasture-hero.webp"
+              />
+              <img
+                src="/home/three-goats-sunny-pasture-mobile.webp"
+                alt="Premium Boer goats grazing in a sunny pasture at Butwal Goat Farm, Nepal"
+                className="h-full w-full object-cover object-[58%_center] opacity-85 md:object-center md:opacity-80"
+                fetchPriority="high"
+              />
+            </picture>
+          </div>
         </div>
 
         {/* Gradient Overlay - Absolute */}

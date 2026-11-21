@@ -41,7 +41,7 @@ export default function AboutSection() {
               {/* First Grid Column */}
               <div className="flex flex-col gap-4 md:gap-4 lg:order-0">
                 <Image
-                  src="/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp"
+                  src="/about/boer-goats-feeding-at-trough.webp"
                   alt="Boer goat breeding farm in Nepal"
                   width={1254}
                   height={1254}
@@ -88,7 +88,7 @@ export default function AboutSection() {
                   </h4>
                 </div>
                 <Image
-                 src="/about/Educational-Goat-Breed-Identification.webp"
+                 src="/about/khari-goats-pastoral-field-nepal.webp"
                   alt="Khari goat indigenous breed in Nepal hills"
                   width={1471}
                   height={1590}
@@ -154,7 +154,7 @@ export default function AboutSection() {
             >
               With Boer crossbreeds achieving 100-200 gm/day growth rates—nearly
               double native breeds—we help farmers upgrade their herds for
-              higher meat production. From Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and across all of Nepal, we deliver
+              higher meat production. From Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, Rupandehi, Taulihawa, Bhairahawa, Siddharthanagar, and across all of Nepal, we deliver
               superior breeding stock, technical training, and complete support
               for commercial goat farming success.
             </p>

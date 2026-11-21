@@ -63,7 +63,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
-        userAgent: "Anthropic- Claude",
+        userAgent: "Anthropic-Claude",
         allow: "/",
       },
       {

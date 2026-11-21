@@ -32,32 +32,32 @@ export default function GallerySection() {
 
   const galleryImages = [
     {
-      src: "/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp",
+      src: "/about/boer-goats-feeding-at-trough.webp",
       alt: "Boer goats feeding at trough",
       title: "Boer Goats"
     },
     {
-      src: "/about/Educational-Goat-Breed-Identification.webp",
+      src: "/about/khari-goats-pastoral-field-nepal.webp",
       alt: "Khari goat indigenous breed",
       title: "Khari Breed"
     },
     {
-      src: "/about/Labeled-Goats-in-a-Rural-Pasture.webp",
+      src: "/about/labeled-goats-rural-pasture-nepal.webp",
       alt: "Goats in rural pasture",
       title: "Pasture Grazing"
     },
     {
-      src: "/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp",
+      src: "/about/boer-goats-feeding-at-trough.webp",
       alt: "Goat feeding time",
       title: "Feeding Time"
     },
     {
-      src: "/about/Educational-Goat-Breed-Identification.webp",
+      src: "/about/khari-goats-pastoral-field-nepal.webp",
       alt: "Indigenous goat breeds",
       title: "Indigenous Breeds"
     },
     {
-      src: "/about/Labeled-Goats-in-a-Rural-Pasture.webp",
+      src: "/about/labeled-goats-rural-pasture-nepal.webp",
       alt: "Rural goat farming",
       title: "Rural Farming"
     },

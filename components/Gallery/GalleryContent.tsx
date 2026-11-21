@@ -32,35 +32,21 @@ export default function GalleryContent() {
 
   const galleryImages = [
     {
-      src: "/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp",
-      alt: "Boer goats feeding at trough",
-      title: "Boer Goats"
+      src: "/about/boer-goats-feeding-at-trough.webp",
+      alt: "Boer goats feeding at trough"
     },
     {
-      src: "/about/Educational-Goat-Breed-Identification.webp",
-      alt: "Khari goat indigenous breed",
-      title: "Khari Breed"
+      src: "/about/khari-goats-pastoral-field-nepal.webp",
+      alt: "Khari goat indigenous breed"
     },
     {
-      src: "/about/Labeled-Goats-in-a-Rural-Pasture.webp",
-      alt: "Goats in rural pasture",
-      title: "Pasture Grazing"
+      src: "/goat/goat-rocky-mountain-hillside.webp",
+      alt: "Goat resting on a rocky mountainside"
     },
     {
-      src: "/about/Three-Goats-Feeding-at-a-Rustic-Trough.webp",
-      alt: "Goat feeding time",
-      title: "Feeding Time"
-    },
-    {
-      src: "/about/Educational-Goat-Breed-Identification.webp",
-      alt: "Indigenous goat breeds",
-      title: "Indigenous Breeds"
-    },
-    {
-      src: "/about/Labeled-Goats-in-a-Rural-Pasture.webp",
-      alt: "Rural goat farming",
-      title: "Rural Farming"
-    },
+      src: "/goat/khari-goat-sunlit-rural-field-nepal.webp",
+      alt: "Khari goat grazing in a sunlit field in Nepal"
+    }
   ];
 
   return (
@@ -113,11 +99,6 @@ export default function GalleryContent() {
                   height={450}
                   className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                    <h3 className="text-white text-lg sm:text-xl font-medium">{image.title}</h3>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
@@ -160,9 +141,6 @@ export default function GalleryContent() {
               height={900}
               className="max-w-full max-h-[75vh] object-contain rounded-lg"
             />
-          </div>
-          <div className="mt-3 sm:mt-4 text-center">
-            <h3 className="text-white text-xl sm:text-2xl font-medium">{selectedImage.title}</h3>
           </div>
         </div>
       )}

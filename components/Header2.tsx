@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   FaFacebookF,
-  FaInstagram,
   FaWhatsapp,
   FaPhoneAlt,
 } from "react-icons/fa";
@@ -58,7 +57,7 @@ export default function Header2() {
             </span>
             <div className="flex space-x-5">
               <a
-                href="#"
+                href="https://www.facebook.com/wazid.ali.69740"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit Butwal Goat Farm on Facebook"
@@ -67,18 +66,6 @@ export default function Header2() {
                 <FaFacebookF size={16} />
                 <span className="sr-only">
                   Visit Butwal Goat Farm on Facebook
-                </span>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Visit Butwal Goat Farm on Instagram"
-                className="text-white hover:text-gray-200 transition-colors"
-              >
-                <FaInstagram size={18} />
-                <span className="sr-only">
-                  Visit Butwal Goat Farm on Instagram
                 </span>
               </a>
               <a
@@ -246,7 +233,7 @@ export default function Header2() {
             </div>
             <div className="flex space-x-6">
               <a
-                href="#"
+                href="https://www.facebook.com/wazid.ali.69740"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit Butwal Goat Farm on Facebook"
@@ -255,18 +242,6 @@ export default function Header2() {
                 <FaFacebookF size={16} />
                 <span className="sr-only">
                   Visit Butwal Goat Farm on Facebook
-                </span>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Visit Butwal Goat Farm on Instagram"
-                className="text-[#2E7D32] transition-colors hover:text-[#2E7D32] bg-gray-100 rounded-md p-2"
-              >
-                <FaInstagram size={18} />
-                <span className="sr-only">
-                  Visit Butwal Goat Farm on Instagram
                 </span>
               </a>
               <a

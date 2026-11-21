@@ -1,0 +1,61 @@
+# Butwal Goat Farm - LLM Context
+
+## Site Information
+- **Site Name**: Butwal Goat Farm
+- **URL**: https://butwal-goat-farm.vercel.app
+- **Description**: Premium Boer, Barbari, and Sirohi goat breeding across Nepal
+- **Location**: Butwal, Lumbini Province, Nepal
+- **Contact**: +977 981-1449565, ainshad711@gmail.com
+- **Founder**: Wazid Ali
+
+## About
+Butwal Goat Farm is Nepal's leading goat breeding farm, specializing in premium Boer, Barbari, and Sirohi goat breeds. Based in Butwal, Rupandehi District, Lumbini Province, we provide indigenous goat farming services and dependable livestock services for commercial farmers across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, Rupandehi, Taulihawa, Bhairahawa, Siddharthanagar, Kapilvastu, Dhangadhi, and all of Nepal.
+
+## Services
+- Premium Goat Breeding (Boer, Barbari, Sirohi)
+- Indigenous Goat Breeding (Khari, Sinhal, Chyangra, Terai)
+- Farm Consultation
+- Training Programs
+- Veterinary Care
+- Goat Trading
+- Farm Setup Support
+
+## Goat Breeds
+- **Boer Goats**: South Africa origin, muscular body, meat-production potential
+- **Barbari Goats**: India origin, white coat with brown/red spots, intensive farming
+- **Sirohi Goats**: Rajasthan India origin, brown coat, dual-purpose dairy and meat
+- **Khari Goats**: Indigenous Nepal breed, hills adapted
+- **Sinhal Goats**: Indigenous Nepal breed
+- **Chyangra Goats**: Indigenous Nepal breed, high altitude
+- **Terai Goats**: Indigenous Nepal breed, plains adapted
+
+## Key Facts
+- Boer crossbreeds achieve 100-200 gm/day growth rates
+- Prices range from NPR 900 to NPR 2,500 per kg live weight
+- 100% pure Boer: NPR 1,900-2,500 per kg
+- 50-87% crosses: NPR 900-1,500 per kg
+- Delivery across all of Nepal
+- Transport charged separately based on distance
+
+## Contact
+- **Phone**: +977 981-1449565
+- **Email**: ainshad711@gmail.com
+- **Address**: Butwal, Rupandehi District, Lumbini Province 32907, Nepal
+- **Service Areas**: All 77 districts of Nepal, including Rupandehi (Butwal, Taulihawa, Bhairahawa, Siddharthanagar), Kapilvastu, Kathmandu, Pokhara, Chitwan, Biratnagar, Nepalgunj, Bharatpur, Birgunj, and Dhangadhi
+- **WhatsApp**: https://wa.me/9779811449565
+
+## Social Media
+- Facebook: https://www.facebook.com/wazid.ali.69740
+
+## Key Pages
+- Home: https://butwal-goat-farm.vercel.app/
+- About: https://butwal-goat-farm.vercel.app/about
+- Our Goats: https://butwal-goat-farm.vercel.app/our-goats
+- Gallery: https://butwal-goat-farm.vercel.app/gallery
+- Contact: https://butwal-goat-farm.vercel.app/contact
+
+## Technologies
+- Next.js 16.4.6
+- React 19.3.0
+- Tailwind CSS 4.3.3
+- Hosted on Vercel

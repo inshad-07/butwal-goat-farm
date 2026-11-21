@@ -6,7 +6,7 @@ export default function StructuredData() {
     "@type": "Organization",
     name: "Butwal Goat Farm",
     alternateName: "Butwal Goat Farm Nepal",
-    description: "Premium Boer, Barbari, and Sirohi goat breeding in Nepal. We provide high-quality goat breeds and livestock services for commercial farmers across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and all of Nepal.",
+    description: "Premium Boer, Barbari, and Sirohi goat breeding in Nepal. We provide high-quality goat breeds and livestock services for commercial farmers across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, Rupandehi, Taulihawa, Lumbini, and all of Nepal.",
     url: "https://butwal-goat-farm.vercel.app",
     logo: "https://butwal-goat-farm.vercel.app/logo/black-text-logo.webp",
     telephone: "+9779811449565",
@@ -24,12 +24,11 @@ export default function StructuredData() {
       latitude: "27.7006",
       longitude: "83.4676",
     },
-    areaServed: ["Nepal", "Kathmandu", "Pokhara", "Chitwan", "Biratnagar", "Butwal", "Lalitpur", "Bhaktapur", "Nepalgunj", "Bharatpur", "Birgunj", "Lumbini Province", "Bagmati Province", "Gandaki Province", "Province 1", "Province 2", "Karnali Province", "Sudurpashchim Province"],
+    areaServed: ["Nepal", "Kathmandu", "Pokhara", "Chitwan", "Biratnagar", "Butwal", "Rupandehi", "Taulihawa", "Lumbini", "Bhairahawa", "Siddharthanagar", "Kapilvastu", "Lalitpur", "Bhaktapur", "Nepalgunj", "Bharatpur", "Birgunj", "Dhangadhi", "Lumbini Province", "Bagmati Province", "Gandaki Province", "Province 1", "Province 2", "Karnali Province", "Sudurpashchim Province"],
     priceRange: "$$",
     openingHours: "Mo-Su 08:00-18:00",
     sameAs: [
-      "https://www.facebook.com/goatfirm",
-      "https://www.instagram.com/goatfirm",
+      "https://www.facebook.com/wazid.ali.69740",
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -44,7 +43,7 @@ export default function StructuredData() {
     "@type": "LocalBusiness",
     name: "Butwal Goat Farm",
     alternateName: "Butwal Goat Farm Nepal",
-    description: "Premium goat breeding farm in Nepal. Specializing in Boer, Barbari, and Sirohi goat breeds for commercial farming across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and all of Nepal.",
+    description: "Premium goat breeding farm in Nepal. Specializing in Boer, Barbari, and Sirohi goat breeds for commercial farming across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, Rupandehi, Taulihawa, Lumbini, and all of Nepal.",
     url: "https://butwal-goat-farm.vercel.app",
     telephone: "+9779811449565",
     address: {
@@ -60,13 +59,12 @@ export default function StructuredData() {
       latitude: "27.7006",
       longitude: "83.4676",
     },
-    areaServed: ["Nepal", "Kathmandu", "Pokhara", "Chitwan", "Biratnagar", "Butwal", "Lalitpur", "Bhaktapur", "Nepalgunj", "Bharatpur", "Birgunj", "Lumbini Province", "Bagmati Province", "Gandaki Province", "Province 1", "Province 2", "Karnali Province", "Sudurpashchim Province"],
+    areaServed: ["Nepal", "Kathmandu", "Pokhara", "Chitwan", "Biratnagar", "Butwal", "Rupandehi", "Taulihawa", "Lumbini", "Bhairahawa", "Siddharthanagar", "Kapilvastu", "Lalitpur", "Bhaktapur", "Nepalgunj", "Bharatpur", "Birgunj", "Dhangadhi", "Lumbini Province", "Bagmati Province", "Gandaki Province", "Province 1", "Province 2", "Karnali Province", "Sudurpashchim Province"],
     priceRange: "$$",
     openingHours: "Mo-Su 08:00-18:00",
     image: "https://butwal-goat-farm.vercel.app/logo/black-text-logo.webp",
     sameAs: [
-      "https://www.facebook.com/goatfirm",
-      "https://www.instagram.com/goatfirm",
+      "https://www.facebook.com/wazid.ali.69740",
     ],
   };
 

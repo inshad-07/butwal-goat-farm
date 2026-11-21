@@ -8,7 +8,7 @@ export default function Map() {
             Find Us on Map
           </h2>
           <p className="mx-auto max-w-xl text-[15px] leading-relaxed text-gray-600">
-            Visit our goat farm located in Butwal, Lumbini Province, Nepal. We're
+            Visit our goat farm located in Butwal, Rupandehi District, Lumbini Province, Nepal. We're
             easily accessible and welcome visitors interested in our premium goat
             breeding services.
           </p>

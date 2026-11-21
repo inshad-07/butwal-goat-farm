@@ -6,8 +6,8 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "About Us - Butwal Goat Farm | Premium Goat Breeding Excellence Across Nepal",
-  description: "Learn about Butwal Goat Farm's premium Boer, Barbari, and Sirohi goat breeding expertise. We specialize in indigenous goat farming across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and all of Nepal's diverse ecological zones.",
-  keywords: ["goat farm Nepal", "goat breeding expertise", "indigenous goats", "Boer crossbreeds", "goat farming Nepal", "livestock services", "goat farm Kathmandu", "goat farm Pokhara", "goat farm Chitwan", "goat farm Biratnagar", "goat farm Butwal"],
+  description: "Learn about Butwal Goat Farm's premium Boer, Barbari, and Sirohi goat breeding expertise. We specialize in indigenous goat farming across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, Rupandehi, and all of Nepal's diverse ecological zones.",
+  keywords: ["goat farm Nepal", "goat breeding expertise", "indigenous goats", "Boer crossbreeds", "goat farming Nepal", "livestock services", "goat farm Kathmandu", "goat farm Pokhara", "goat farm Chitwan", "goat farm Biratnagar", "goat farm Butwal", "goat farm Rupandehi", "goat farm Taulihawa", "goat farm Lumbini"],
   openGraph: {
     title: "About Us - Butwal Goat Farm",
     description: "Learn about Butwal Goat Farm's premium goat breeding expertise across Nepal.",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo/Butwal-Goat-Farm-Logo.webp",
+        url: "/logo/butwal-goat-farm-logo.webp",
         width: 1200,
         height: 630,
         alt: "Butwal Goat Farm - Premium Goat Breeding Across Nepal",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Us - Butwal Goat Farm",
     description: "Learn about Butwal Goat Farm's premium goat breeding expertise across Nepal.",
-    images: ["/logo/Butwal-Goat-Farm-Logo.webp"],
+    images: ["/logo/butwal-goat-farm-logo.webp"],
   },
   alternates: {
     canonical: "https://butwal-goat-farm.vercel.app/about",

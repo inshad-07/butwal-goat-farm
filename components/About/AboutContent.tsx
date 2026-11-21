@@ -55,8 +55,8 @@ export default function AboutContent() {
                 style={{ transitionDelay: "0ms" }}
               >
                 <Image
-                  src="/about/kx7xmvdiih3bss5aeqto.webp"
-                  alt="Boer goat breeding farm in Nepal"
+                  src="/about/boer-goat-breeding-farm-nepal.webp"
+                  alt="Boer goat breeding farm in Nepal - premium goat farming"
                   width={800}
                   height={600}
                   sizes="(min-width: 1024px) 40vw, 100vw"

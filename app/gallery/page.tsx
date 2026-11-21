@@ -5,7 +5,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Gallery - Butwal Goat Farm | See Our Premium Goats and Farm",
   description: "Explore Butwal Goat Farm's gallery showcasing our premium Boer, Barbari, and Sirohi goats, farm facilities, and breeding operations across Nepal.",
-  keywords: ["goat farm gallery Nepal", "Boer goats images", "goat breeding photos", "goat farm Nepal", "livestock gallery", "goat farm Kathmandu", "goat farm Pokhara", "goat farm Chitwan", "goat farm Biratnagar", "goat farm Butwal"],
+  keywords: ["goat farm gallery Nepal", "Boer goats images", "goat breeding photos", "goat farm Nepal", "livestock gallery", "goat farm Kathmandu", "goat farm Pokhara", "goat farm Chitwan", "goat farm Biratnagar", "goat farm Butwal", "goat farm Rupandehi", "goat farm Taulihawa", "goat farm Lumbini"],
   openGraph: {
     title: "Gallery - Butwal Goat Farm",
     description: "Explore Butwal Goat Farm's gallery showcasing our premium goats and farm across Nepal.",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo/Butwal-Goat-Farm-Logo.webp",
+        url: "/logo/butwal-goat-farm-logo.webp",
         width: 1200,
         height: 630,
         alt: "Butwal Goat Farm - Premium Goat Breeding Across Nepal",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gallery - Butwal Goat Farm",
     description: "Explore Butwal Goat Farm's gallery showcasing our premium goats and farm across Nepal.",
-    images: ["/logo/Butwal-Goat-Farm-Logo.webp"],
+    images: ["/logo/butwal-goat-farm-logo.webp"],
   },
   alternates: {
     canonical: "https://butwal-goat-farm.vercel.app/gallery",

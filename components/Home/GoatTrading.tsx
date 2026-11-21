@@ -132,8 +132,8 @@ export default function GoatTrading() {
               <div className="lg:hidden">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/about/dnygpshzyrhhieccwwwj.webp"
-                    alt="Premium Boer goats for sale"
+                    src="/about/premium-boer-goats-for-sale.webp"
+                    alt="Premium Boer goats for sale in Nepal"
                     width={800}
                     height={450}
                     className="w-full h-full object-cover"
@@ -161,8 +161,8 @@ export default function GoatTrading() {
               {/* Desktop: Overlay layout */}
               <div className="hidden lg:block relative aspect-video overflow-hidden">
                 <Image
-                  src="/about/dnygpshzyrhhieccwwwj.webp"
-                  alt="Premium Boer goats for sale"
+                  src="/about/premium-boer-goats-for-sale.webp"
+                  alt="Premium Boer goats for sale in Nepal"
                   width={800}
                   height={450}
                   className="w-full h-full object-cover"
@@ -201,8 +201,8 @@ export default function GoatTrading() {
               <div className="lg:hidden">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/about/fmz2vnhyvgaozpkidhci.webp"
-                    alt="Farmers marketplace for selling goats"
+                    src="/about/goat-farmers-marketplace-nepal.webp"
+                    alt="Goat farmers marketplace for selling goats across Nepal"
                     width={800}
                     height={450}
                     className="w-full h-full object-cover"
@@ -228,8 +228,8 @@ export default function GoatTrading() {
               {/* Desktop: Overlay layout */}
               <div className="hidden lg:block relative aspect-video overflow-hidden">
                 <Image
-                  src="/about/fmz2vnhyvgaozpkidhci.webp"
-                  alt="Farmers marketplace for selling goats"
+                  src="/about/goat-farmers-marketplace-nepal.webp"
+                  alt="Goat farmers marketplace for selling goats across Nepal"
                   width={800}
                   height={450}
                   className="w-full h-full object-cover"

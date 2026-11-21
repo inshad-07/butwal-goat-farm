@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
 import { BsTelephoneFill } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
@@ -36,12 +36,12 @@ export default function Footer() {
             <p className="text-[15px] leading-relaxed mb-6 text-white/65">
               We sell premium Boer, Barbari, and Sirohi goats with
               indigenous goat farming and dependable livestock services for
-              commercial farmers across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, and all of Nepal.
+              commercial farmers across Kathmandu, Pokhara, Chitwan, Biratnagar, Butwal, Rupandehi, Taulihawa, Bhairahawa, Siddharthanagar, and all of Nepal.
             </p>
 
             <div className="flex space-x-4 text-white">
               <a
-                href="#"
+                href="https://www.facebook.com/wazid.ali.69740"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit Butwal Goat Farm on Facebook"
@@ -50,18 +50,6 @@ export default function Footer() {
                 <FaFacebookF size={18} />
                 <span className="sr-only">
                   Visit Butwal Goat Farm on Facebook
-                </span>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Visit Butwal Goat Farm on Instagram"
-                className="hover:text-[#1B5E20] transition-colors"
-              >
-                <FaInstagram size={19} />
-                <span className="sr-only">
-                  Visit Butwal Goat Farm on Instagram
                 </span>
               </a>
               <a
@@ -168,7 +156,7 @@ export default function Footer() {
                 <IoLocationSharp className="text-[#2E7D32]" /> Office Location
               </div>
               <p className="text-[15px] text-white/65 pl-6">
-              Butwal,
+              Butwal, Rupandehi District,
                 <br />
                 Lumbini Province 32907, Nepal
               </p>
