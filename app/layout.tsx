@@ -33,7 +33,11 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" },
       { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
+      { url: "/icon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
@@ -50,6 +54,7 @@ export const metadata: Metadata = {
   other: {
     "application-name": "Butwal Goat Farm",
     "apple-mobile-web-app-title": "Butwal Goat Farm",
+    "site-name": "Butwal Goat Farm",
   },
   openGraph: {
     title: "Butwal Goat Farm - Premium Goat Breeding Across Nepal",
@@ -84,6 +89,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body className="min-h-full flex flex-col">
         <StructuredData/>
         <SmoothScroll/>
